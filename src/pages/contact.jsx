@@ -3,6 +3,7 @@ import "../styles/contact.css";
 import work_bg from "../assets/vid/workbg-video.mp4";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   window.addEventListener("load", function () {
@@ -18,6 +19,8 @@ const Contact = () => {
 
     newVideo.play();
   });
+
+  const navigate = useNavigate();
   return (
     <div className="contact">
       <Navbar />
@@ -64,7 +67,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="linkedin_info">
-        <BackButton className="btn" />
+        <BackButton className="btn" onClick={() => navigate(-1)} />
         <div className="container">
           <p className="subtitle">Linkedln</p>
           <ul className="sublist">
