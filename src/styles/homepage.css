@@ -34,6 +34,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  color: #ffffff;
   /* animation: fadeIn forwards ease-in-out 2s 2s; */
 }
 .homepage .top .info .bgvid video {
@@ -225,6 +226,61 @@
 }
 .homepage .more_content .btns .btn:nth-child(2) {
   color: rgba(161, 231, 249, 0.9);
+}
+
+@media (max-width: 916px) {
+  .homepage .top .info h1 {
+    font-size: 50px;
+  }
+  .homepage .top {
+    padding: 1em;
+    padding-top: 0;
+  }
+  .homepage .more_content .preshow {
+    width: 90%;
+    height: 200px;
+  }
+  .homepage .more_content .our_team .mber {
+    width: calc((100% / 2) - 3em);
+    margin: 2em 1.5em;
+    position: relative;
+  }
+}
+@media (max-width: 800px) {
+  .homepage .top .info {
+    justify-content: center;
+  }
+  .homepage .top .info .moreIf {
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  .homepage .more_content h1.ourteam {
+    font-size: 54px;
+    margin-top: 1.5em;
+  }
+  .homepage .more_content .our_team .mber .img {
+    margin: 6px 0;
+    height: 250px;
+  }
+  .homepage .more_content .our_team .mber p {
+    font-size: 23px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 606px) {
+  .homepage .more_content .btns {
+    flex-wrap: wrap;
+    margin: 100px 0;
+  }
+  .homepage .more_content .our_team .mber {
+    width: calc((100% / 1) - 3em);
+    margin: 1em 1.5em;
+    position: relative;
+  }
+  .homepage .top .info h1 {
+    font-size: 37px;
+  }
 }
 
 @keyframes animateImsHome {

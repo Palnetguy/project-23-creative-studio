@@ -117,3 +117,22 @@
 .Imprint ul {
   list-style-type: none;
 }
+@media (max-width: 950px) {
+  .Imprint .first_sctn {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 800px) {
+  .Imprint .first_sctn {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .Imprint {
+    padding: 0 1em;
+  }
+}

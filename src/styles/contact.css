@@ -124,3 +124,43 @@
   padding: 10px 10px;
   height: fit-content;
 }
+@media (max-width: 950px) {
+  .contact .navbar {
+    padding: 0 1em;
+  }
+  .contact h1{
+    font-size: 26px;
+  }
+  .contact .cont_info {
+    padding: 0 100px;
+  }
+  .contact .office_info {
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+  }
+  .contact .linkedin_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 850px) {
+  .contact .cont_info {
+    padding: 0 16px;
+  }
+  .contact .office_info {
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+  }
+  .contact .linkedin_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    padding-bottom: 60px;
+  }
+}

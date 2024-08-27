@@ -13,3 +13,8 @@ footer {
   margin-top: 1.5em;
   /* cursor: pointer; */
 }
+@media (max-width: 850px){
+  footer{
+    font-size: 12px;
+  }
+}
