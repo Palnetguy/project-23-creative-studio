@@ -18,6 +18,7 @@
       rgba(198, 172, 208, 0.76) 83.5%,
       #7f3e98 100%
     );
+  background: #b79bf0;
 }
 
 .works .navbar {
@@ -33,7 +34,7 @@
   line-height: normal;
   letter-spacing: -1.92px;
   padding: 0 60px;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .works .works_nav {
@@ -239,8 +240,9 @@
 .works > video {
   width: 100%;
   position: absolute;
-  /* opacity: 0.7; */
+  opacity: 0.7;
   mix-blend-mode: color-burn;
+  z-index: -1;
 }
 @keyframes fadeIn {
   0% {
@@ -271,10 +273,9 @@
     padding: 0 1em;
   }
   .works > .info > .text {
-
     padding: 1em;
     margin: 3em 1em;
-}
+  }
   .works > video {
     width: 100%;
     position: absolute;

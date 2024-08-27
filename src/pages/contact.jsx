@@ -47,14 +47,14 @@ const Contact = () => {
       <Navbar />
       {/* <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video> */}
       <video
-            id="backGb"
-            ref={videoRef}
-            src={work_bg}
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
+        id="backGb"
+        ref={videoRef}
+        src={work_bg}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
       <div className="cont_info">
         <h1>CONTACT</h1>
         <div className="info">
