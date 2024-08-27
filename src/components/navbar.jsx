@@ -6,38 +6,38 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <nav>
-        <Link to="/">
+        <Link target="_top" to="/">
           <div className="logo">
             <img src={logo} alt="" />
           </div>
         </Link>
         <ul>
           <li>
-            <Link to="/">
+            <Link target="_top" to="/">
               COMPANY.
               <span>COMPANY.</span>
             </Link>
           </li>
           <li>
-            <Link to="/works">
+            <Link target="_top" to="/works">
               WORKS.
               <span>WORKS.</span>
             </Link>
           </li>
           <li>
-            <Link to="/news">
+            <Link target="_top" to="/news">
               NEWS.
               <span>NEWS.</span>
             </Link>
           </li>
           <li>
-            <Link to="/imprint">
+            <Link target="_top" to="/imprint">
               IMPRINT.
               <span>IMPRINT.</span>
             </Link>
           </li>
           <li>
-            <Link to="/contact">
+            <Link target="_top" to="/contact">
               CONTACT.
               <span>CONTACT.</span>
             </Link>

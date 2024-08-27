@@ -10,6 +10,7 @@ import prof6 from "../assets/images/prof6.jpeg";
 import prof7 from "../assets/images/prof7.jpeg";
 import prof8 from "../assets/images/prof8.jpeg";
 import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   window.addEventListener("load", function () {
@@ -145,8 +146,12 @@ const MoreContent = () => {
       </div>
 
       <div className="btns">
-        <div className="btn">WORK</div>
-        <div className="btn">CONTACT</div>
+        <Link to="/works" target="_top">
+          <div className="btn">WORK</div>
+        </Link>
+        <Link to="/contact" target="_top">
+          <div className="btn">CONTACT</div>
+        </Link>
       </div>
 
       <Footer />
