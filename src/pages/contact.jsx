@@ -4,27 +4,57 @@ import work_bg from "../assets/vid/workbg-video.mp4";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 const Contact = () => {
-  window.addEventListener("load", function () {
-    var newVideo = document.getElementById("backGbW");
-    newVideo.addEventListener(
-      "ended",
-      function () {
-        this.currentTime = 0;
-        this.play();
-      },
-      false
-    );
+  const videoRef = useRef(null);
 
-    newVideo.play();
-  });
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    if (videoElement) {
+      // Ensure video plays in a loop
+      videoElement.addEventListener(
+        "ended",
+        function () {
+          this.currentTime = 0;
+          this.play();
+        },
+        false
+      );
+
+      // Play the video (with autoplay considerations)
+      videoElement.muted = true; // Mute video to comply with autoplay policies
+      videoElement.play().catch((error) => {
+        console.error("Error attempting to play video:", error);
+      });
+    }
+
+    // Cleanup event listener on component unmount
+    return () => {
+      if (videoElement) {
+        videoElement.removeEventListener("ended", function () {
+          this.currentTime = 0;
+          this.play();
+        });
+      }
+    };
+  }, []);
 
   const navigate = useNavigate();
   return (
     <div className="contact">
       <Navbar />
-      <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video>
+      {/* <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video> */}
+      <video
+            id="backGb"
+            ref={videoRef}
+            src={work_bg}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
       <div className="cont_info">
         <h1>CONTACT</h1>
         <div className="info">

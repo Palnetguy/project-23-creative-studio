@@ -11,43 +11,65 @@ import prof7 from "../assets/images/prof7.jpeg";
 import prof8 from "../assets/images/prof8.jpeg";
 import Footer from "../components/footer";
 import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 const Homepage = () => {
-  window.addEventListener("load", function () {
-    var newVideo = document.getElementById("backGb");
-    newVideo.addEventListener(
-      "ended",
-      function () {
-        this.currentTime = 0;
-        this.play();
-      },
-      false
-    );
+  const videoRef = useRef(null);
 
-    newVideo.play();
-  });
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    if (videoElement) {
+      // Ensure video plays in a loop
+      videoElement.addEventListener(
+        "ended",
+        function () {
+          this.currentTime = 0;
+          this.play();
+        },
+        false
+      );
+
+      // Play the video (with autoplay considerations)
+      videoElement.muted = true; // Mute video to comply with autoplay policies
+      videoElement.play().catch((error) => {
+        console.error("Error attempting to play video:", error);
+      });
+    }
+
+    // Cleanup event listener on component unmount
+    return () => {
+      if (videoElement) {
+        videoElement.removeEventListener("ended", function () {
+          this.currentTime = 0;
+          this.play();
+        });
+      }
+    };
+  }, []);
   return (
     <div className="homepage">
-      <Top />
+      <Top videoRef={videoRef} />
       <MoreContent />
     </div>
   );
 };
 
-const Top = () => {
+const Top = ({ videoRef }) => {
   return (
     <div className="top">
       <Navbar />
       <div className="info">
         <div className="bgvid">
           <video
-            src={backGb}
             id="backGb"
-            autoplay
+            ref={videoRef}
+            src={backGb}
+            autoPlay
             loop
             muted
-            playsinline
-          ></video>
+            playsInline
+          />
         </div>
         <div className="main">
           <h1>PROJECTOR 23</h1>

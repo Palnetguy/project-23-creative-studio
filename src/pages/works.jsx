@@ -8,7 +8,7 @@ import char_anim from "../assets/images/char_anim.jpg";
 import inov_img from "../assets/images/inov_img.jpg";
 import sci_img from "../assets/images/sci_img.jpg";
 import work_bg from "../assets/vid/workbg-video.mp4";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BackButton from "../components/back_button";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
@@ -89,24 +89,53 @@ const Works = () => {
   //     });
   //   });
 
-  window.addEventListener("load", function () {
-    var newVideo = document.getElementById("backGbW");
-    newVideo.addEventListener(
-      "ended",
-      function () {
-        this.currentTime = 0;
-        this.play();
-      },
-      false
-    );
+  const videoRef = useRef(null);
 
-    newVideo.play();
-  });
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    if (videoElement) {
+      // Ensure video plays in a loop
+      videoElement.addEventListener(
+        "ended",
+        function () {
+          this.currentTime = 0;
+          this.play();
+        },
+        false
+      );
+
+      // Play the video (with autoplay considerations)
+      videoElement.muted = true; // Mute video to comply with autoplay policies
+      videoElement.play().catch((error) => {
+        console.error("Error attempting to play video:", error);
+      });
+    }
+
+    // Cleanup event listener on component unmount
+    return () => {
+      if (videoElement) {
+        videoElement.removeEventListener("ended", function () {
+          this.currentTime = 0;
+          this.play();
+        });
+      }
+    };
+  }, []);
 
   return (
     <div className="works">
       {/* <video src={work_bg} className="work_bg" id="backGbW" autoPlay></video> */}
-      <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video>
+      {/* <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video> */}
+      <video
+        id="backGbW"
+        ref={videoRef}
+        src={work_bg}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
       <Navbar />
       <h1>Works</h1>
       <div className="works_nav">
