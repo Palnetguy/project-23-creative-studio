@@ -240,7 +240,9 @@
   }
   .homepage .more_content .preshow {
     width: 90%;
-    height: 200px;
+    height: 140px;
+    border-radius: 15px;
+    margin-top: 0em;
   }
   .homepage .more_content .our_team .mber {
     width: calc((100% / 2) - 3em);
