@@ -46,6 +46,7 @@
   top: -4.5em;
   animation: fadeInBg forwards ease-in-out 2s 2s;
 }
+
 .homepage .top .info h1 {
   color: rgba(255, 255, 255, 0.6);
   color: #fff;
@@ -86,7 +87,7 @@
   flex-shrink: 0;
   position: relative;
   /* bottom: -10em; */
-  margin-top: 5em;
+  margin-top: 3em;
   opacity: 0;
   animation: fadeIn forwards ease-in-out 2s 4.5s;
   /* position: absolute; */
@@ -99,6 +100,14 @@
   flex-direction: column;
   justify-content: center;
 } */
+.homepage .top .info > .main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: red; */
+}
 .homepage .top .info .moreIf p {
   color: #7f3e98;
   font-family: Outfit;
@@ -154,6 +163,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 16px;
+  margin-top: 1em;
 }
 .homepage .more_content h1.ourteam {
   color: rgba(161, 231, 249, 0.9);
@@ -165,11 +175,11 @@
   line-height: normal;
   letter-spacing: -1.68px;
   text-align: center;
-  margin-top: 0.5em;
+  margin-top: 1.2em;
 }
 .homepage .more_content .our_team .mber {
   width: calc((100% / 4) - 3em);
-  margin: 2em 1.5em;
+  margin: 3.5em 1.5em;
   position: relative;
 }
 .homepage .more_content .our_team .mber p {
@@ -181,6 +191,12 @@
   letter-spacing: -0.6px;
   line-height: normal;
   text-align: center;
+  /* font-size: 18px; */
+}
+.homepage .more_content .our_team .mber p:nth-child(3) {
+  font-size: 25px;
+
+  font-size: 18px;
 }
 
 .homepage .more_content .our_team .mber .img {
@@ -190,7 +206,7 @@
   height: 300px;
   flex-shrink: 0;
   border-radius: 20px;
-  margin: 18px 0;
+  margin: 14px 0;
 }
 .homepage .more_content .our_team .mber .img img {
   width: 100%;
@@ -221,7 +237,7 @@
   align-items: center;
   display: flex;
   flex-shrink: 0;
-  color: #fff;
+  color: rgba(161, 231, 249, 0.9);
   font-family: Outfit;
   font-size: 24px;
   font-style: normal;
