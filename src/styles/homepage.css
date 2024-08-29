@@ -45,6 +45,7 @@
   opacity: 0;
   top: -4.5em;
   animation: fadeInBg forwards ease-in-out 2s 2s;
+  z-index: -1;
 }
 
 .homepage .top .info h1 {
@@ -218,7 +219,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 150px 0;
+  /* margin: 150px 0; */
+  /* margin: em 0; */
+  margin-top: 1.3em;
+  margin-bottom: 3em;
 }
 .homepage .more_content .btns .btn {
   margin: 1em;
