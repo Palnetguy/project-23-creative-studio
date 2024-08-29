@@ -26,6 +26,10 @@
   margin: 0 auto;
   cursor: pointer;
   user-select: none;
+  width: 200px;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0 1.2em;
 }
 .back_botton svg {
   width: 60px;

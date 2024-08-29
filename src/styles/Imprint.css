@@ -23,7 +23,7 @@
 .Imprint p {
   color: #56005e;
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -37,7 +37,7 @@
 .Imprint h1 {
   color: #7f3e98;
   font-family: Outfit;
-  font-size: 80px;
+  font-size: 77px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -46,7 +46,7 @@
 .Imprint h2 {
   color: #7f3e98;
   font-family: Outfit;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -81,6 +81,7 @@
   /* color: red; */
 }
 .Imprint .first_sctn {
+  padding-top: 3em;
   display: flex;
   /* flex: 1; */
   align-items: flex-end;
@@ -109,6 +110,10 @@
   font-style: normal;
   font-weight: 500;
   margin: 2em 0;
+  width: 200px;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0 1.2em;
 }
 .Imprint .bttom {
   margin: 3em auto;

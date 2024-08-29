@@ -1,6 +1,6 @@
 import BackButton from "../components/back_button";
 import "../styles/contact.css";
-import work_bg from "../assets/vid/workbg-video.mp4";
+import work_bg from "../assets/vid/homebg-video.mp4";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import { useNavigate } from "react-router-dom";

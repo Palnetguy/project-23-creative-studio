@@ -127,7 +127,7 @@ const Works = () => {
     <div className="works">
       {/* <video src={work_bg} className="work_bg" id="backGbW" autoPlay></video> */}
       {/* <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video> */}
-      <video
+      {/* <video
         id="backGbW"
         ref={videoRef}
         src={work_bg}
@@ -135,7 +135,7 @@ const Works = () => {
         loop
         muted
         playsInline
-      />
+      /> */}
       <Navbar />
       <h1>Works</h1>
       <div className="works_nav">
