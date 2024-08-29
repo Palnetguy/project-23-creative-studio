@@ -13,7 +13,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  /* justify-content: center; */
   /* padding: 3em; */
 }
 .homepage .top {
@@ -42,10 +43,12 @@
   height: 100%;
   position: absolute;
   opacity: 0;
+  top: -4.5em;
   animation: fadeInBg forwards ease-in-out 2s 2s;
 }
 .homepage .top .info h1 {
   color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   text-shadow: 0px 4px 4px rgba(204, 172, 222, 0.6);
   font-family: sans-serif;
   font-size: 80px;
@@ -262,7 +265,7 @@
     animation: fadeInBg forwards ease-in-out 2s 2s;
     top: -20%;
     left: -10%;
-    transform: scale(1.8);
+    transform: scale(1.6);
   }
   .homepage .top .info .moreIf {
     margin: 0;
@@ -275,7 +278,7 @@
   .homepage .top .info .moreIf {
     width: 100%;
     margin-top: 1.5em;
-    /* margin-bottom: -8em; */
+    margin-bottom: -3em;
   }
   .homepage .more_content h1.ourteam {
     font-size: 54px;
