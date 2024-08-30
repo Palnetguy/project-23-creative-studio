@@ -234,6 +234,19 @@
   position: relative;
 }
 
+.works .eachwork .info > div.images .image {
+  width: 95%;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.works .eachwork .info > div.images .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}
 .works .eachwork.active > .image > svg {
   transform: rotateX(0);
   perspective: 1000px;
