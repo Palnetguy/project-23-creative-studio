@@ -270,7 +270,7 @@
     width: 90%;
     height: 140px;
     border-radius: 15px;
-    margin-top: 0em;
+    margin-top: 2em;
   }
   .homepage .more_content .our_team .mber {
     width: calc((100% / 2) - 3em);
@@ -302,7 +302,7 @@
   .homepage .top .info .moreIf {
     width: 100%;
     margin-top: 1.5em;
-    margin-bottom: -3em;
+    margin-bottom: 3em;
   }
   .homepage .more_content h1.ourteam {
     font-size: 54px;
