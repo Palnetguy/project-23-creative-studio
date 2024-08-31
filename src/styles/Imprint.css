@@ -1,5 +1,5 @@
 .Imprint {
-  background: linear-gradient(
+  /* background: linear-gradient(
       0deg,
       rgba(74, 144, 226, 0.15) 0%,
       rgba(74, 144, 226, 0.15) 100%
@@ -15,7 +15,7 @@
       #4a90e2 36.5%,
       #f6f5f5 72.5%,
       #7f3e98 100%
-    );
+    ); */
   padding: 0 60px;
   /* padding-bottom: 60px; */
 }
@@ -122,6 +122,7 @@
 .Imprint ul {
   list-style-type: none;
 }
+
 @media (max-width: 950px) {
   .Imprint .first_sctn {
     display: flex;

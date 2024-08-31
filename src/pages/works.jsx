@@ -657,6 +657,28 @@ const ShowWorks = ({
 
     // });
   }, []);
+  useEffect(() => {
+    // document.addEventListener("DOMContentLoaded", function () {
+    const buttons1 = document.querySelectorAll(".open_btn_1");
+    console.log(buttons1);
+
+    buttons1.forEach((button1) => {
+      button1.addEventListener("click", () => {
+        console.log("hi");
+
+        const content = button1.parentElement.parentElement.parentElement;
+        if (content.classList.contains("active")) {
+          content.classList.remove("active");
+          console.log(content.classList);
+        } else {
+          content.classList.add("active");
+          console.log(content.classList);
+        }
+      });
+    });
+
+    // });
+  }, []);
   return (
     <div className="show_works">
       {/* {list_of_works.map((e) => (
@@ -669,31 +691,56 @@ const ShowWorks = ({
             <div className="image image_each_work">
               <img src={e.image} alt="" className="open_btn" />
 
-              <svg
-                // onClick={handleAddClass}
-                className="open_btn"
-                xmlns="http://www.w3.org/2000/svg"
-                width="72"
-                height="72"
-                viewBox="0 0 72 72"
-                fill="none"
-              >
-                <circle
-                  opacity="0.6"
-                  cx="36"
-                  cy="36"
-                  r="35.5"
-                  fill="#9747FF"
-                  stroke="#9747FF"
-                />
-                <path
-                  d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
-                  fill="white"
-                />
-              </svg>
+                <svg
+                  // onClick={handleAddClass}
+                  className="open_btn"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                >
+                  <circle
+                    opacity="0.6"
+                    cx="36"
+                    cy="36"
+                    r="35.5"
+                    fill="#9747FF"
+                    stroke="#9747FF"
+                  />
+                  <path
+                    d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
+                    fill="white"
+                  />
+                </svg>
+
             </div>
             <div className="info">
               <div className="images">
+                {e.more_images.length !== 0 && (
+                  <svg
+                    // onClick={handleAddClass}
+                    className="open_btn_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                  >
+                    <circle
+                      opacity="0.6"
+                      cx="36"
+                      cy="36"
+                      r="35.5"
+                      fill="#9747FF"
+                      stroke="#9747FF"
+                    />
+                    <path
+                      d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
+                      fill="white"
+                    />
+                  </svg>
+                )}
                 {e.more_images.map((e) => (
                   <div className="image">
                     <img src={e} alt="" />

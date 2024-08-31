@@ -87,6 +87,13 @@
   transition: 0.5s;
   width: 95%;
   margin: 1em auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.28) 5.54%,
+    rgba(255, 255, 255, 0.12) 93.74%
+  );
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
 }
 .works .works_nav .work .text.active {
   color: #56005e;
@@ -112,7 +119,7 @@
   backdrop-filter: blur(10px);
   /* width: 60%; */
   /* height: 230px; */
-  padding: 1em;
+  padding: 2em;
   flex-shrink: 0;
   position: relative;
   /* bottom: -10em; */
@@ -160,7 +167,7 @@
   width: 100%;
 } */
 .works .eachwork > .image > svg {
-  width: 55px;
+  width: 60px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -168,6 +175,12 @@
   cursor: pointer;
   z-index: 2;
   pointer-events: all;
+  /* box-shadow: #56005e 4px 4px; */
+}
+.works .eachwork > .image > svg > circle {
+  fill: transparent;
+  outline: transparent;
+  stroke: transparent;
 }
 .works .eachwork .info p:nth-child(1) {
   color: #fff;
@@ -218,7 +231,16 @@
 }
 /* .works .eachwork .info p {
 } */
-
+.works .eachwork .images > svg {
+  width: 55px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 0.6em;
+  cursor: pointer;
+  z-index: 2;
+  pointer-events: all;
+}
 .works .eachwork .info > div {
   transform: translateY(-100%);
   opacity: 0;
@@ -235,7 +257,7 @@
 }
 
 .works .eachwork .info > div.images .image {
-  width: 95%;
+  width: 100%;
   border-radius: 20px;
   margin: 0 auto;
   margin-bottom: 1em;
@@ -245,14 +267,13 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  
 }
 .works .eachwork.active > .image > svg {
-  transform: rotateX(0);
+  transform: rotateX(0) scale(1.5);
   perspective: 1000px;
 }
 .works .eachwork > .image > svg {
-  transform: rotateX(180deg);
+  transform: rotateX(180deg) scale(1.5);
   perspective: 1000px;
   transition: 0.5s;
 }
