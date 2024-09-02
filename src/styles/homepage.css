@@ -276,6 +276,8 @@
     width: calc((100% / 2) - 3em);
     margin: 2em 1.5em;
     position: relative;
+
+    
   }
   .homepage .top .info .bgvid {
     /* position: relative; */
