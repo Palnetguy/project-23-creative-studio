@@ -23,9 +23,9 @@
 .Imprint p {
   color: #56005e;
   font-family: Outfit;
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
   line-height: normal;
   letter-spacing: -0.56px;
   margin-bottom: 10px;
@@ -115,10 +115,7 @@
   justify-content: space-between;
   padding: 0 1.2em;
 }
-.Imprint .bttom {
-  margin: 3em auto;
-  margin-bottom: 0;
-}
+
 .Imprint ul {
   list-style-type: none;
 }
