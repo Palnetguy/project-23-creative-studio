@@ -41,6 +41,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 60px;
+  justify-content: center;
 }
 .works .works_nav .work {
   width: calc((100% / 5) - 3em);
@@ -315,7 +316,7 @@
 }
 @media (max-width: 900px) {
   .works .navbar {
-    padding: 0 1em;
+    padding: 0 0em;
   }
   .works .works_nav {
     display: flex;
@@ -350,6 +351,7 @@
   }
   .works > h1 {
     font-size: 60px;
+    text-align: center;
   }
 }
 @media (max-width: 800px) {

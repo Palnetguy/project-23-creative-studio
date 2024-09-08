@@ -127,7 +127,7 @@
 }
 @media (max-width: 950px) {
   .contact .navbar {
-    padding: 0 1em;
+    padding: 0 0em;
   }
   .contact h1 {
     font-size: 26px;

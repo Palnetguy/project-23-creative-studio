@@ -112,9 +112,13 @@
     margin-top: 2em;
   }
   .news .navbar {
-    padding: 0 1em;
+    padding: 0 0em;
   }
   .news > h1 {
     font-size: 60px;
+    text-align: center;
+  }
+  .news .navbar {
+    padding: 0;
   }
 }

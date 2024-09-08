@@ -8,7 +8,7 @@ const Imprint = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="contain">
+      <div className="contain_imprint">
         <Navbar />
         <div className="Imprint">
           <div className="first_sctn">
@@ -89,14 +89,16 @@ const Imprint = () => {
             </div>
             <div className="rgt">
               <h3>Commercial Register Number</h3>
-              <p>Amtsgericht Charlottenburg Berlin HRA 41066B</p>
+              <p className="ad_ce">
+                Amtsgericht Charlottenburg Berlin HRA 41066B
+              </p>
               <h3>EU VAT ID</h3>
-              <p>DE252281327</p>
+              <p className="ad_ce">DE252281327</p>
               <h3>Responsible for the content according to § 55 Abs. 2 RStV</h3>
-              <p>Martina Sakova</p>
+              <p className="ad_ce">Martina Sakova</p>
               <h3>References for the used pictures and graphics</h3>
-              <p>– will be delivered on request –</p>
-              <p>
+              <p className="ad_ce">– will be delivered on request –</p>
+              <p className="ad_ce">
                 <span className="highLit">Source</span>: Imprint created by the
                 imprint generator of e-recht24.de
               </p>
@@ -258,7 +260,7 @@ const Imprint = () => {
             </li>
           </ul>
           <h3>3. Name and Address of the Data Protection Officer</h3>
-          <p>The Data Protection Officer of the controller is</p>
+          <p className="ad_ce">The Data Protection Officer of the controller is</p>
           <ul>
             <li>
               <p>Martin Kleinmichel</p>
@@ -665,8 +667,8 @@ const Imprint = () => {
             SOLMECKE, Cologne.
           </p>
           <BackButton className="bttom" onClick={() => navigate(-1)} />
-          <Footer />
         </div>
+        <Footer />
       </div>
     </>
   );

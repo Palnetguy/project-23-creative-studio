@@ -51,7 +51,6 @@
 .homepage .top .info h1 {
   color: rgba(255, 255, 255, 0.6);
   color: #fff;
-  text-shadow: 0px 4px 4px rgba(204, 172, 222, 0.6);
   font-family: sans-serif;
   font-size: 80px;
   font-style: normal;
@@ -261,8 +260,13 @@
 @media (max-width: 916px) {
   .homepage .top .info h1 {
     font-size: 50px;
+    line-height: 1;
   }
   .homepage .top {
+    padding: 0em;
+    padding-top: 0;
+  }
+  .homepage .top .info {
     padding: 1em;
     padding-top: 0;
   }
@@ -276,12 +280,11 @@
     width: calc((100% / 2) - 3em);
     margin: 2em 1.5em;
     position: relative;
-
-    
   }
   .homepage .top .info .bgvid {
     /* position: relative; */
     overflow: hidden;
+    inset: 0;
   }
   .homepage .top .info .bgvid video {
     width: 100%;
@@ -311,8 +314,9 @@
     margin-top: 1.5em;
   }
   .homepage .more_content .our_team .mber .img {
-    margin: 6px 0;
+    margin: 6px auto;
     height: 250px;
+    width: 230px;
   }
   .homepage .more_content .our_team .mber p {
     font-size: 23px;
