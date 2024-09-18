@@ -1,5 +1,5 @@
 import Contact from "./pages/contact";
-import Homepage from "./pages/homepage";
+import HomePage from "./pages/homepage";
 import Imprint from "./pages/Imprint";
 import News from "./pages/news";
 import Works from "./pages/works";
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/news" element={<News />} />
           <Route path="/works" element={<Works />} />
           <Route path="/imprint" element={<Imprint />} />

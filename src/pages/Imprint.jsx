@@ -352,20 +352,20 @@ const Imprint = () => {
             legislator to obtain from the controller free information about his
             or her personal data stored at any time and a copy of this
             information. Furthermore, the European directives and regulations
-            grant the data subject access to the following information: the
-            purposes of the processing; the categories of personal data
-            concerned; the recipients or categories of recipients to whom the
+            grant the data subject access to the following information:the
+            purposes of the processing;the categories of personal data
+            concerned;the recipients or categories of recipients to whom the
             personal data have been or will be disclosed, in particular
-            recipients in third countries or international organisations; where
+            recipients in third countries or international organisations;where
             possible, the envisaged period for which the personal data will be
             stored, or, if not possible, the criteria used to determine that
-            period; the existence of the right to request from the controller
+            period;the existence of the right to request from the controller
             rectification or erasure of personal data, or restriction of
             processing of personal data concerning the data subject, or to
-            object to such processing; the existence of the right to lodge a
-            complaint with a supervisory authority; where the personal data are
+            object to such processing;the existence of the right to lodge a
+            complaint with a supervisory authority;where the personal data are
             not collected from the data subject, any available information as to
-            their source; the existence of automated decision-making, including
+            their source;the existence of automated decision-making, including
             profiling, referred to in Article 22(1) and (4) of the GDPR and, at
             least in those cases, meaningful information about the logic
             involved, as well as the significance and envisaged consequences of
@@ -398,18 +398,18 @@ const Imprint = () => {
             data concerning him or her without undue delay, and the controller
             shall have the obligation to erase personal data without undue delay
             where one of the following grounds applies, as long as the
-            processing is not necessary: The personal data are no longer
+            processing is not necessary:The personal data are no longer
             necessary in relation to the purposes for which they were collected
-            or otherwise processed. The data subject withdraws consent to which
+            or otherwise processed.The data subject withdraws consent to which
             the processing is based according to point (a) of Article 6(1) of
             the GDPR, or point (a) of Article 9(2) of the GDPR, and where there
-            is no other legal ground for the processing. The data subject
+            is no other legal ground for the processing.The data subject
             objects to the processing pursuant to Article 21(1) of the GDPR and
             there are no overriding legitimate grounds for the processing, or
             the data subject objects to the processing pursuant to Article 21(2)
-            of the GDPR. The personal data have been unlawfully processed. The
+            of the GDPR.The personal data have been unlawfully processed.The
             personal data must be erased for compliance with a legal obligation
-            in Union or Member State law to which the controller is subject. The
+            in Union or Member State law to which the controller is subject.The
             personal data have been collected in relation to the offer of
             information society services referred to in Article 8(1) of the
             GDPR.
@@ -437,15 +437,15 @@ const Imprint = () => {
           <p>
             Each data subject shall have the right granted by the European
             legislator to obtain from the controller restriction of processing
-            where one of the following applies: The accuracy of the personal
+            where one of the following applies:The accuracy of the personal
             data is contested by the data subject, for a period enabling the
-            controller to verify the accuracy of the personal data. The
+            controller to verify the accuracy of the personal data.The
             processing is unlawful and the data subject opposes the erasure of
             the personal data and requests instead the restriction of their use
-            instead. The controller no longer needs the personal data for the
+            instead.The controller no longer needs the personal data for the
             purposes of the processing, but they are required by the data
             subject for the establishment, exercise or defence of legal
-            claims. The data subject has objected to processing pursuant to
+            claims.The data subject has objected to processing pursuant to
             Article 21(1) of the GDPR pending the verification whether the
             legitimate grounds of the controller override those of the data
             subject.

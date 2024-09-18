@@ -1,186 +1,51 @@
-import Navbar from "../components/navbar";
+import { lazy, useEffect, useRef, useCallback, Suspense } from "react";
 import "../styles/homepage.css";
-import backGb from "../assets/vid/homebg-video.mp4";
-import prof1 from "../assets/images/prof1.jpeg";
-import prof2 from "../assets/images/prof2.jpeg";
-import prof3 from "../assets/images/prof3.jpeg";
-import prof4 from "../assets/images/prof4.jpeg";
-import prof5 from "../assets/images/prof5.jpeg";
-import prof6 from "../assets/images/prof6.jpeg";
-import prof7 from "../assets/images/prof7.jpeg";
-import prof8 from "../assets/images/prof8.jpeg";
-import Footer from "../components/footer";
-import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+
+const Top = lazy(() => import("../components/homepage/Top"));
+const MoreContent = lazy(() => import("../components/homepage/MoreContent"));
+
+
+
+const useVideoLoop = (videoRef) => {
+  const handleEnded = useCallback(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.currentTime = 0;
+      video.play().catch(error => 
+        console.error("Error replaying video:", error)
+      );
+    }
+  }, [videoRef]);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.addEventListener("ended", handleEnded);
+    video.muted = true;
+    video.play().catch(error => 
+      console.error("Error playing video:", error)
+    );
+
+    return () => video.removeEventListener("ended", handleEnded);
+  }, [handleEnded, videoRef]);
+};
 
 const Homepage = () => {
   const videoRef = useRef(null);
+  useVideoLoop(videoRef);
 
-  useEffect(() => {
-    const videoElement = videoRef.current;
-
-    if (videoElement) {
-      // Ensure video plays in a loop
-      videoElement.addEventListener(
-        "ended",
-        function () {
-          this.currentTime = 0;
-          this.play();
-        },
-        false
-      );
-
-      // Play the video (with autoplay considerations)
-      videoElement.muted = true; // Mute video to comply with autoplay policies
-      videoElement.play().catch((error) => {
-        console.error("Error attempting to play video:", error);
-      });
-    }
-
-    // Cleanup event listener on component unmount
-    return () => {
-      if (videoElement) {
-        videoElement.removeEventListener("ended", function () {
-          this.currentTime = 0;
-          this.play();
-        });
-      }
-    };
-  }, []);
   return (
     <div className="homepage">
-      <Top videoRef={videoRef} />
-      <MoreContent />
+      <Suspense fallback={<div style={{ minHeight: '400px' }} className="loading">Loading...</div>}>
+        <Top videoRef={videoRef} />
+      </Suspense>
+      <Suspense fallback={<div style={{ minHeight: '300px' }} className="loading">Loading more content...</div>}>
+        <MoreContent />
+      </Suspense>
     </div>
   );
 };
 
-const Top = ({ videoRef }) => {
-  return (
-    <div className="top">
-      <Navbar />
-      <div className="info">
-        <div className="bgvid">
-          <video
-            id="backGb"
-            ref={videoRef}
-            src={backGb}
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-        </div>
-        <div className="main">
-          <h1>PROJECTOR 23</h1>
-          <h1>CREATIVE STUDIO</h1>
-        </div>
-
-        <div className="moreIf">
-          <p>
-            Projector23 is a Berlin-based film production company, VFX studio
-            and hub for innovative solutions. Since 2008 we create
-            documentaries, fiction, animation and image films. We are constantly
-            searching for fresh solutions with a character of its own, with a
-            special interest in pressing social issues.
-          </p>
-          <p>
-            Our feature film SUMMER REBELS was shortlisted for the 2021 German
-            Film Award and won the German Film Critics' Award. It screened at
-            numerous international film festivals and was theatrically released
-            in Germany, Austria, the Czech Republic, and Slovakia. Discover our
-            new film projects in the FILMS section.
-          </p>
-          <p>
-            As service production we offer: Conceptual Framework | Storytelling
-            | 2/3D, Fulldome, Animation, VFX, VR | Motion & AI Prompt Design |
-            For more information we recommend you to visit our WORKS section or
-            get in touch with us.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-};
-const MoreContent = () => {
-  return (
-    <div className="more_content">
-      <div className="preshow"></div>
-
-      <h1 className="ourteam">OUR TEAM</h1>
-      <div className="our_team">
-        <div className="mber">
-          <p>Martin kleinmichel</p>
-          <div className="img">
-            <img src={prof1} alt="" />
-          </div>
-          <p>Creative, Producer</p>
-        </div>
-        <div className="mber">
-          <p>Martina Sakova</p>
-          <div className="img">
-            <img src={prof2} alt="" />
-          </div>
-          <p>Concept Development, Producer</p>
-        </div>
-        <div className="mber">
-          <p>Richard Sako</p>
-          <div className="img">
-            <img src={prof3} alt="" />
-          </div>
-          <p>Animation, VFX</p>
-        </div>
-        <div className="mber">
-          <p>Sülke Schulz</p>
-          <div className="img">
-            <img src={prof4} alt="" />
-          </div>
-          <p>Creative Writer</p>
-        </div>
-        <div className="mber">
-          <p>Caou Reinbach</p>
-          <div className="img">
-            <img src={prof5} alt="" />
-          </div>
-          <p>Motion Design, VFX</p>
-        </div>
-        <div className="mber">
-          <p>Nico Maehliss</p>
-          <div className="img">
-            <img src={prof6} alt="" />
-          </div>
-          <p>Technical Support, 3D Engineering</p>
-        </div>
-        <div className="mber">
-          <p>Atari Sako Kleinmichel</p>
-          <div className="img">
-            <img src={prof7} alt="" />
-          </div>
-          <p>Trainee, Graphic Design, Handmade Illustration;)</p>
-        </div>
-        <div className="mber">
-          <p>Melchior Sako</p>
-          <div className="img">
-            <img src={prof8} alt="" />
-          </div>
-          <p>Trainee, 3D Modelling & Game Design </p>
-        </div>
-      </div>
-
-      <div className="btns">
-        <Link to="/works" target="_top">
-          <div className="btn">WORK</div>
-        </Link>
-        <Link to="/contact" target="_top">
-          <div className="btn">CONTACT</div>
-        </Link>
-      </div>
-
-      <Footer />
-    </div>
-  );
-};
-
-// export default MainContent;
 
 export default Homepage;
