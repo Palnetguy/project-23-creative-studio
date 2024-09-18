@@ -36,16 +36,17 @@
 
 .Imprint h1 {
   color: #7f3e98;
-  font-family: Outfit;
+  font-family: Gilroy;
   font-size: 77px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: -1.92px;
+  text-transform: uppercase;
 }
 .Imprint h2 {
   color: #7f3e98;
-  font-family: Outfit;
+  font-family: Gilroy;
   font-size: 22px;
   font-style: normal;
   font-weight: 800;
@@ -54,7 +55,7 @@
 }
 .Imprint h3 {
   color: #7f3e98;
-  font-family: Outfit;
+  font-family: Gilroy;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -63,7 +64,7 @@
 }
 .Imprint h3 {
   color: #7f3e98;
-  font-family: Outfit;
+  font-family: Gilroy;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;

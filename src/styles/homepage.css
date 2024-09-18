@@ -51,7 +51,7 @@
 .homepage .top .info h1 {
   color: rgba(255, 255, 255, 0.6);
   color: #fff;
-  font-family: sans-serif;
+  font-family: Gilroy;
   font-size: 80px;
   font-style: normal;
   font-weight: 800;
@@ -110,7 +110,6 @@
 }
 .homepage .top .info .moreIf p {
   color: #7f3e98;
-  font-family: Outfit;
   font-size: 14px;
   font-family: Outfit;
   font-style: normal;
@@ -168,7 +167,7 @@
 }
 .homepage .more_content h1.ourteam {
   color: rgba(161, 231, 249, 0.9);
-  font-family: Outfit;
+  font-family: Gilroy;
   font-size: 74px;
   font-style: normal;
   font-weight: 800;
