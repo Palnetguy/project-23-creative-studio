@@ -77,7 +77,8 @@ import sci25Im1 from "../assets/images/SciAnim/sci25/im1.jpeg";
 const Works = () => {
   //   var works_type_select = "Fiction Films";
 
-  const [works_type_select, setworks_type_select] = useState("");
+  const [worksTypeSelect, setWorksTypeSelect] = useState("");
+  const selectedRef=useRef(null)
   //   const [works_type_selectnext, setworks_type_selectnext] = useState("");
   const list_of_works = [
     {
@@ -421,11 +422,9 @@ const Works = () => {
       image: testIm,
     },
   ];
-
   const handle_works_type_select_change = (type) => {
     // setworks_type_selectnext(type);
-
-    setworks_type_select(type);
+    setWorksTypeSelect(type);
     // setworks_type_selectnext("");
 
     // if (works_type_select != "" && works_type_selectnext != "") {
@@ -453,6 +452,7 @@ const Works = () => {
 
   const videoRef = useRef(null);
 
+
   useEffect(() => {
     const videoElement = videoRef.current;
 
@@ -473,7 +473,7 @@ const Works = () => {
         console.error("Error attempting to play video:", error);
       });
     }
-
+    
     // Cleanup event listener on component unmount
     return () => {
       if (videoElement) {
@@ -485,6 +485,12 @@ const Works = () => {
     };
   }, []);
 
+  useEffect(()=>{
+    if(worksTypeSelect&&selectedRef.current){
+      selectedRef.current.scrollIntoView({behaviour:'smooth', block:'start'})
+      selectedRef.current.focus();
+    }
+  }, [worksTypeSelect])
   return (
     <div className="works">
       {/* <video src={work_bg} className="work_bg" id="backGbW" autoPlay></video> */}
@@ -507,12 +513,12 @@ const Works = () => {
             handle_works_type_select_change("Fiction Films");
           }}
         >
-          <div className="img">
+          <div className="img" ref={selectedRef}>
             <img src={fic_work} alt="" />
           </div>
           <div
             className={`text ${
-              works_type_select === "Fiction Films" ? "active" : ""
+              worksTypeSelect === "Fiction Films" ? "active" : ""
             }`}
           >
             <p>Fiction Films</p>
@@ -524,12 +530,13 @@ const Works = () => {
             handle_works_type_select_change("Scientific Animation")
           }
         >
-          <div className="img">
+          <div className="img" ref={selectedRef}>
             <img src={sci_img} alt="" />
           </div>
           <div
+            
             className={`text ${
-              works_type_select === "Scientific Animation" ? "active" : ""
+              worksTypeSelect === "Scientific Animation" ? "active" : ""
             }`}
           >
             <p>Scientific Animation</p>
@@ -539,12 +546,13 @@ const Works = () => {
           className="work"
           onClick={() => handle_works_type_select_change("Character Animation")}
         >
-          <div className="img">
+          <div className="img" ref={selectedRef}>
             <img src={char_anim} alt="" />
           </div>
           <div
+            
             className={`text ${
-              works_type_select === "Character Animation" ? "active" : ""
+              worksTypeSelect === "Character Animation" ? "active" : ""
             }`}
           >
             <p>Character Animation</p>
@@ -554,12 +562,13 @@ const Works = () => {
           className="work"
           onClick={() => handle_works_type_select_change("Documentaries")}
         >
-          <div className="img">
+          <div className="img" ref={selectedRef}>
             <img src={docum_im} alt="" />
           </div>
           <div
+            
             className={`text ${
-              works_type_select === "Documentaries" ? "active" : ""
+              worksTypeSelect === "Documentaries" ? "active" : ""
             }`}
           >
             <p>Documentaries</p>
@@ -571,12 +580,12 @@ const Works = () => {
             handle_works_type_select_change("Innovative Solutions")
           }
         >
-          <div className="img">
+          <div className="img" ref={selectedRef}>
             <img src={inov_img} alt="" />
           </div>
           <div
             className={`text ${
-              works_type_select === "Innovative Solutions" ? "active" : ""
+              worksTypeSelect === "Innovative Solutions" ? "active" : ""
             }`}
           >
             <p>Innovative Solutions</p>
@@ -584,15 +593,15 @@ const Works = () => {
         </div>
       </div>
 
-      {works_type_select !== "" && (
+      {worksTypeSelect !== "" && (
         <ShowWorks
           list_of_works={list_of_works}
-          works_type_select={works_type_select}
-          setworks_type_select={setworks_type_select}
+          works_type_select={worksTypeSelect}
+          setworks_type_select={setWorksTypeSelect}
         />
       )}
 
-      {works_type_select === "" && <WorksInfo />}
+      {worksTypeSelect === "" && <WorksInfo />}
 
       <Footer />
     </div>
