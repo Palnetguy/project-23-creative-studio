@@ -7,7 +7,7 @@ import docum_im from "../assets/images/docum_im.jpg";
 import char_anim from "../assets/images/char_anim.jpg";
 import inov_img from "../assets/images/inov_img.jpg";
 import sci_img from "../assets/images/sci_img.jpg";
-import work_bg from "../assets/vid/workbg-video.mp4";
+// import work_bg from "../assets/vid/workbg-video.mp4";
 import { useEffect, useRef, useState } from "react";
 import BackButton from "../components/back_button";
 import Footer from "../components/footer";
@@ -512,7 +512,7 @@ const Works = () => {
           </div>
           <div
             className={`text ${
-              works_type_select == "Fiction Films" ? "active" : ""
+              works_type_select === "Fiction Films" ? "active" : ""
             }`}
           >
             <p>Fiction Films</p>
@@ -529,7 +529,7 @@ const Works = () => {
           </div>
           <div
             className={`text ${
-              works_type_select == "Scientific Animation" ? "active" : ""
+              works_type_select === "Scientific Animation" ? "active" : ""
             }`}
           >
             <p>Scientific Animation</p>
@@ -544,7 +544,7 @@ const Works = () => {
           </div>
           <div
             className={`text ${
-              works_type_select == "Character Animation" ? "active" : ""
+              works_type_select === "Character Animation" ? "active" : ""
             }`}
           >
             <p>Character Animation</p>
@@ -559,7 +559,7 @@ const Works = () => {
           </div>
           <div
             className={`text ${
-              works_type_select == "Documentaries" ? "active" : ""
+              works_type_select === "Documentaries" ? "active" : ""
             }`}
           >
             <p>Documentaries</p>
@@ -576,7 +576,7 @@ const Works = () => {
           </div>
           <div
             className={`text ${
-              works_type_select == "Innovative Solutions" ? "active" : ""
+              works_type_select === "Innovative Solutions" ? "active" : ""
             }`}
           >
             <p>Innovative Solutions</p>
@@ -584,7 +584,7 @@ const Works = () => {
         </div>
       </div>
 
-      {works_type_select != "" && (
+      {works_type_select !== "" && (
         <ShowWorks
           list_of_works={list_of_works}
           works_type_select={works_type_select}
@@ -592,7 +592,7 @@ const Works = () => {
         />
       )}
 
-      {works_type_select == "" && <WorksInfo />}
+      {works_type_select === "" && <WorksInfo />}
 
       <Footer />
     </div>
