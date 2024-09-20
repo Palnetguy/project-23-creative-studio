@@ -793,16 +793,9 @@ const Works = () => {
       type_info:
         "3D animations for science magazine TERRA X, broadcaster ZDF (Germany)",
       more_info: "From Columbus to outer space | with Harald Lesch | 43 min",
-      image: testIm,
-    },
-    {
-      type: "Innovative Solutions",
-      more_images: [],
-      title:"",
-      type_info:"",
-      more_info:"",
       image: is1img,
     },
+   
     {
       type: "Innovative Solutions",
       more_images: [],
