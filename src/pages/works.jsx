@@ -13,41 +13,35 @@ import BackButton from "../components/back_button";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 
-// fic imags
+// fiction films images import
 import fic1Im1 from "../assets/images/Ficition/Fic1/im1.jpeg";
 import fic1Im2 from "../assets/images/Ficition/Fic1/im2.jpeg";
 import fic1Im3 from "../assets/images/Ficition/Fic1/im3.jpeg";
-
 import fic2Im1 from "../assets/images/Ficition/fic2/im1.jpeg";
 import fic2Im2 from "../assets/images/Ficition/fic2/im2.jpeg";
 import fic2Im3 from "../assets/images/Ficition/fic2/im3.jpeg";
 import fic2Im4 from "../assets/images/Ficition/fic2/im4.jpeg";
 import fic2Im5 from "../assets/images/Ficition/fic2/im5.jpeg";
 import fic2Im6 from "../assets/images/Ficition/fic2/im6.jpeg";
-
 import fic3Im1 from "../assets/images/Ficition/fic3/im1.jpeg";
 import fic3Im2 from "../assets/images/Ficition/fic3/im2.jpeg";
 import fic3Im3 from "../assets/images/Ficition/fic3/im3.jpeg";
 import fic3Im4 from "../assets/images/Ficition/fic3/im4.jpeg";
 import fic3Im5 from "../assets/images/Ficition/fic3/im5.jpeg";
-
 import fic4Im1 from "../assets/images/Ficition/fic4/im1.jpeg";
-
 import fic5Im1 from "../assets/images/Ficition/fic5/im1.jpeg";
 import fic5Im2 from "../assets/images/Ficition/fic5/im2.jpeg";
 import fic5Im3 from "../assets/images/Ficition/fic5/im3.jpeg";
 import fic5Im4 from "../assets/images/Ficition/fic5/im4.jpeg";
 import fic5Im5 from "../assets/images/Ficition/fic3/im5.jpeg";
-
 import fic6Im1 from "../assets/images/Ficition/fic6/im1.jpeg";
 import fic6Im2 from "../assets/images/Ficition/fic6/im2.jpeg";
-
 import fic7Im1 from "../assets/images/Ficition/fic7/im1.jpeg";
 import fic8Im1 from "../assets/images/Ficition/fic8/im1.jpeg";
 import fic9Im1 from "../assets/images/Ficition/fic9/im1.jpeg";
 import fic10Im1 from "../assets/images/Ficition/fic10/im1.jpeg";
 import fic11Im1 from "../assets/images/Ficition/fic11/im.jpeg";
-
+// scientific animation images imports
 import sci1Im1 from "../assets/images/SciAnim/sci1/im1.jpeg";
 import sci2Im1 from "../assets/images/SciAnim/sci2/im1.jpeg";
 import sci3Im1 from "../assets/images/SciAnim/sci3/im1.jpeg";
@@ -73,6 +67,55 @@ import sci22Im1 from "../assets/images/SciAnim/sci22/im1.jpeg";
 import sci23Im1 from "../assets/images/SciAnim/sci23/im1.jpeg";
 import sci24Im1 from "../assets/images/SciAnim/sci24/im1.jpeg";
 import sci25Im1 from "../assets/images/SciAnim/sci25/im1.jpeg";
+//character animation images import
+import ca1img from "../assets/images/characterAnimation/01_HeavyMental.jpg";
+import ca2img from "../assets/images/characterAnimation/02_Familiale.jpg";
+import ca3img from "../assets/images/characterAnimation/03_uber_mut.jpg";
+import ca4img from "../assets/images/characterAnimation/04_FREUD.jpg";
+import ca5img from "../assets/images/characterAnimation/05_ULULA.jpg";
+import ca6img from "../assets/images/characterAnimation/06_ProvinzialsInsurance.jpg";
+import ca7img from "../assets/images/characterAnimation/07_Müllerland.jpg";
+import ca8img from "../assets/images/characterAnimation/08_11mm.jpg";
+import ca9img from "../assets/images/characterAnimation/09_WATCHINGtheBall.jpg";
+import ca10img from "../assets/images/characterAnimation/10_DBS.jpg";
+import ca11img from "../assets/images/characterAnimation/11_RECHTHABER.jpg";
+import ca12img from "../assets/images/characterAnimation/12_ubermacht.jpg";
+import ca13img from "../assets/images/characterAnimation/13_VORURTEILE.jpg";
+import ca14img from "../assets/images/characterAnimation/14_SPARKASSE.jpg";
+import ca15img from "../assets/images/characterAnimation/15_SPD Zukunft.jpg";
+import ca16img from "../assets/images/characterAnimation/16_Europawahl.jpg";
+import ca17img from "../assets/images/characterAnimation/17_Karpfen.jpg";
+import ca18img from "../assets/images/characterAnimation/18_LebenPUR.jpg";
+import ca19img from "../assets/images/characterAnimation/19_EENLAND.jpg";
+import ca20img from "../assets/images/characterAnimation/20_blutkörperchen.jpg";
+import ca21img from "../assets/images/characterAnimation/21_TUNNELLIFE.jpg";
+import ca22img from "../assets/images/characterAnimation/22_CHINA.jpg";
+//documentaries images import
+import doc00img from "../assets/images/documentaries/00_MALAHANOJ.jpg";
+import doc01img from "../assets/images/documentaries/01_tonenntaucher.jpg";
+import doc02img from "../assets/images/documentaries/02_Google-Cloud.jpg";
+import doc03img from "../assets/images/documentaries/03_HeyWelt.jpg";
+import doc04img from "../assets/images/documentaries/04_LITTLEHANOI.jpg";
+import doc05img from "../assets/images/documentaries/05_BUGSpremiere.jpg";
+import doc06img from "../assets/images/documentaries/06_ArbeitMöglichMachen.jpg";
+import doc07img from "../assets/images/documentaries/07_BREMEN_Inklusion.jpg";
+import doc08img from "../assets/images/documentaries/08_Fussballeinfach.jpg";
+import doc09img from "../assets/images/documentaries/09_Fussballverbindet.jpg";
+import doc10img from "../assets/images/documentaries/10_BÄÄM.jpg";
+import doc11img from "../assets/images/documentaries/11_DEAFSLAM.jpg";
+import doc12img from "../assets/images/documentaries/12_CHILDBOXERS.jpg";
+import doc13img from "../assets/images/documentaries/13_uranium.jpg";
+import doc14img from "../assets/images/documentaries/14_cinemateka.jpg";
+import doc15img from "../assets/images/documentaries/15_IRAN.jpg";
+import doc16img from "../assets/images/documentaries/16_NEUGIERIG.jpg";
+import doc17img from "../assets/images/documentaries/17_SINEMA_pasik.jpg";
+import doc18img from "../assets/images/documentaries/18_UberallDabei.jpg";
+import doc19img from "../assets/images/documentaries/19_Susedia.jpg";
+import doc20img from "../assets/images/documentaries/20_wanderlust.jpg";
+//innovation solutins images imports
+import is1img from "../assets/images/innovativeSolutions/LOVEBOTS_AI_1.jpg";
+import is2img from "../assets/images/innovativeSolutions/LOVEBOTS_AI_2.jpg";
+import is3img from "../assets/images/innovativeSolutions/LOVEBOTS_AI_3.jpg";
 
 const Works = () => {
   //   var works_type_select = "Fiction Films";
@@ -404,6 +447,182 @@ const Works = () => {
       image: testIm,
     },
     {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca1img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca2img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca3img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca4img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca5img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca6img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca7img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca8img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca9img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca10img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca11img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca12img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca13img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca14img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca15img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca16img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca17img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca18img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca19img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca20img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca21img,
+    },
+    {
+      type: "Character Animation",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: ca22img,
+    },
+    {
       type: "Documentaries",
       title: "MEASURING THE EARTH (2/2)",
       more_images: [],
@@ -413,6 +632,166 @@ const Works = () => {
       image: testIm,
     },
     {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc00img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc01img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc02img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc04img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc05img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc06img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc07img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      typed_info: "",
+      more_info: "",
+      image: doc08img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc09img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc10img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      typed_info: "",
+      more_info: "",
+      image: doc11img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc12img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc13img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc14img,
+
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc15img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc16img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc17img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc18img,
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc19img,
+
+    },
+    {
+      type: "Documentaries",
+      more_images: [],
+      title:"",
+      typed_info: "",
+      more_info: "",
+      image: doc20img,
+    },
+    {
       type: "Innovative Solutions",
       more_images: [],
       title: "MEASURING THE EARTH (2/2)",
@@ -420,6 +799,30 @@ const Works = () => {
         "3D animations for science magazine TERRA X, broadcaster ZDF (Germany)",
       more_info: "From Columbus to outer space | with Harald Lesch | 43 min",
       image: testIm,
+    },
+    {
+      type: "Innovative Solutions",
+      more_images: [],
+      title:"",
+      type_info:"",
+      more_info:"",
+      image: is1img,
+    },
+    {
+      type: "Innovative Solutions",
+      more_images: [],
+      title:"",
+      type_info:"",
+      more_info:"",
+      image: is2img,
+    },
+    {
+      type: "Innovative Solutions",
+      more_images: [],
+      title:"",
+      type_info:"",
+      more_info:"",
+      image: is3img,
     },
   ];
   const handle_works_type_select_change = (type) => {
