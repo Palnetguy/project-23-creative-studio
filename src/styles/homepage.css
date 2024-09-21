@@ -55,7 +55,7 @@
   font-size: 80px;
   font-style: normal;
   font-weight: 800;
-  line-height: 60px;
+  line-height: 40px;
   letter-spacing: -2px;
   /* text-stro */
   /* -webkit-text-stroke-width: 0.2px; */
@@ -265,6 +265,7 @@
 }
 @media (max-width: 916px) {
   .homepage .top .info h1 {
+    font-family: Gilroy;
     font-size: 50px;
     line-height: 1;
   }
