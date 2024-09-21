@@ -1,4 +1,4 @@
-import { lazy, useEffect, useRef, useCallback, Suspense } from "react";
+import { lazy, useEffect, useRef, useCallback } from "react";
 import "../styles/homepage.css";
 
 const Top = lazy(() => import("../components/homepage/Top"));
@@ -37,12 +37,8 @@ const Homepage = () => {
 
   return (
     <div className="homepage">
-      <Suspense fallback={<div style={{ minHeight: '400px' }} className="loading">Loading...</div>}>
         <Top videoRef={videoRef} />
-      </Suspense>
-      <Suspense fallback={<div style={{ minHeight: '300px' }} className="loading">Loading more content...</div>}>
         <MoreContent />
-      </Suspense>
     </div>
   );
 };
