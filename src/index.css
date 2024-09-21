@@ -5,8 +5,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #c4adf0;
+/* body { */
+  /* background-color: #c4adf0;
   background: linear-gradient(
       0deg,
       rgba(74, 144, 226, 0.15) 0%,
@@ -25,6 +25,14 @@ body {
       #7f3e98 100%
     );
   /* padding: 0 60px; */
+/* } */ 
+body{
+  background-image: url('../src/assets/images/background/Desktop-1.png');
+}
+@media (max-width: 800px) {
+  body{
+  background-image: url('../src/assets/images/background/Background-mob.png');
+  }
 }
 a {
   text-decoration: none;

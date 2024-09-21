@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  background-image: url('../assets/images/background/contact-background-1.png');
 }
 .contact .navbar {
   padding: 0 60px;
