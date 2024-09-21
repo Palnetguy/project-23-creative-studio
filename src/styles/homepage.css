@@ -47,12 +47,12 @@
   animation: fadeInBg forwards ease-in-out 2s 2s;
   z-index: -1;
 }
-
+/* h1 */
 .homepage .top .info h1 {
   color: rgba(255, 255, 255, 0.6);
   color: #fff;
   font-family: Gilroy;
-  font-size: 80px;
+  font-size: 900px;
   font-style: normal;
   font-weight: 800;
   line-height: 60px;
