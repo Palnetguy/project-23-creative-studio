@@ -17,4 +17,8 @@ footer {
   footer{
     font-size: 8px;
   }
+  .rightelem{
+    padding: 0 5px 0 0;
+
+  }
 }
