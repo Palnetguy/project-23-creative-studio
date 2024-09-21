@@ -35,20 +35,20 @@ const Navbar = () => {
                   {" "}
                   <path
                     d="M20 7L4 7"
-                    stroke="#ffffff"
+                    stroke="purple"
                     stroke-width="1.5"
                     stroke-linecap="round"
                   ></path>{" "}
                   <path
-                    opacity="0.5"
+                    // opacity="0.5"
                     d="M20 12L4 12"
-                    stroke="#ffffff"
+                    stroke="purple"
                     stroke-width="1.5"
                     stroke-linecap="round"
                   ></path>{" "}
                   <path
                     d="M20 17L4 17"
-                    stroke="#ffffff"
+                    stroke="purple"
                     stroke-width="1.5"
                     stroke-linecap="round"
                   ></path>{" "}
