@@ -5,6 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: url('../assets/images/background/Desktop-1.png');
 }
 
 .homepage .top .info {
@@ -158,7 +159,9 @@
   background-repeat: no-repeat;
   animation: animateImsHome calc(1.5s * 6) infinite ease-in-out;
 }
-
+.homepage .more_content {
+  background: url('../assets/images/background/Background-mob.png');
+}
 .homepage .more_content .our_team {
   display: flex;
   flex-wrap: wrap;
@@ -317,6 +320,7 @@
     margin-bottom: 3em;
   }
   .homepage .more_content h1.ourteam {
+    font-family: Gilroy;
     font-size: 54px;
     margin-top: 1.5em;
   }
@@ -341,6 +345,7 @@
     position: relative;
   }
   .homepage .top .info h1 {
+    font-family: Gilroy;
     font-size: 37px;
   }
 }
