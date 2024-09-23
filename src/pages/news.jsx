@@ -114,13 +114,13 @@ const NewsTap = React.memo(({ title, pic, paragraph, director }) => {
       <p className="title">{title}</p>
       <div className="info">
         <div className="img">
-          <img
-          style={{
-            width: '250px',
-            height: '301px',
-            flexShrink: 0,
-            borderRadius: '10px'
-          }}
+          <img className="img"
+          // style={{
+          //   width: '250px',
+          //   height: '301px',
+          //   flexShrink: 0,
+          //   borderRadius: '10px'
+          // }}
             src={pic}
             alt={title}
           />
