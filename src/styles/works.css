@@ -1,8 +1,5 @@
 .works {
-  background-image: url("../assets/images/background/works-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center;
+
   /* background: linear-gradient(
       0deg,
       rgba(74, 144, 226, 0.15) 0%,
