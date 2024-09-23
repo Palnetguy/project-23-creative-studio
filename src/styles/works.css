@@ -158,7 +158,7 @@
 .works .eachwork > .image {
   height: 240px;
   align-self: stretch;
-  background: red;
+  /* background: red; */
   width: 100%;
   /* margin: 0 auto; */
   position: relative;
