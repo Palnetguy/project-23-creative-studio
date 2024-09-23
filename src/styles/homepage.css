@@ -7,6 +7,7 @@
   flex-direction: column;
   background: url('../assets/images/background/Desktop-1.png');
   margin-bottom: -10px;
+  padding: 3em;
 }
 
 .homepage .top .info {
