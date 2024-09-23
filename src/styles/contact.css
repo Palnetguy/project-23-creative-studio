@@ -28,6 +28,7 @@
 }
 .contact .cont_info {
   padding: 0 200px;
+  z-index: 2;
 }
 .contact .cont_info .info {
   display: flex;
@@ -74,6 +75,7 @@
 }
 .contact .sublist {
   list-style-type: none;
+  z-index: 2;
 }
 .contact .sublist p {
   list-style-type: none;
@@ -98,6 +100,7 @@
 }
 
 .contact .linkedin_info {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
