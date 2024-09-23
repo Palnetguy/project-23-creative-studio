@@ -69,29 +69,11 @@
   animation: animFirstWord1 forwards ease-in-out 1.5s,
     animFirstWordScaleUp forwards ease-in-out 1.5s 1.5s;
 }
-/* .homepage .top .info h1:nth-child(1) {
-  opacity: 0;
-  animation: zoomFadeIn forwards ease-in-out 1.5s 2s;
-} */
-@keyframes zoomOutFadeIn  {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 .homepage .top .info h1:nth-child(1) {
   opacity: 0;
-  animation: zoomOutFadeIn 2s forwards ease-in-out 1.5s;
+  animation: fadeIn forwards ease-in-out 1.5s 2s;
 }
+  
 
 .homepage .top .info .moreIf {
   border-radius: 20px;
