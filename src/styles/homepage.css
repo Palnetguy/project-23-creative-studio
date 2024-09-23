@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   background: url('../assets/images/background/Desktop-1.png');
+  margin-bottom: -120px;
 }
 
 .homepage .top .info {
@@ -181,10 +182,10 @@
 }
 .homepage .more_content {
   background: url('../assets/images/background/Background-mob.png');
-  margin-top: -180px;
-  /* background-size: cover;
+  margin-top: 0;
+  background-size: cover;
   background-position: center top;
-  padding-top: 180px; */
+  padding-top: 180px;
 }
 .homepage .more_content .our_team {
   display: flex;
