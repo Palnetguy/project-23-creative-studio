@@ -32,6 +32,8 @@ body{
 @media (max-width: 800px) {
   body{
   background-image: url('../src/assets/images/background/Background-mob.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   }
 }
 a {
