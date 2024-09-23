@@ -1,9 +1,9 @@
 .news {
-    background-image: url('../src/assets/images/background/Desktop-1.png');
+    background-image: url('../assets/images/background/Desktop-1.png');
 
   @media (max-width: 800px) {
     body{
-    background-image: url('../src/assets/images/background/Background-mob.png');
+    background-image: url('../assets/images/background/Background-mob.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     }

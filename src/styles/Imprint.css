@@ -1,4 +1,13 @@
 .Imprint {
+  background-image: url('../assets/images/background/Desktop-1.png');
+
+  @media (max-width: 800px) {
+    body{
+    background-image: url('../assets/images/background/Background-mob.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+  }
   /* background: linear-gradient(
       0deg,
       rgba(74, 144, 226, 0.15) 0%,
