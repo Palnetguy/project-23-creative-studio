@@ -161,6 +161,7 @@
 }
 .homepage .more_content {
   background: url('../assets/images/background/Background-mob.png');
+  margin-top: -180px;
 }
 .homepage .more_content .our_team {
   display: flex;
