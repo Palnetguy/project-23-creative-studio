@@ -98,6 +98,7 @@
   /* position: absolute; */
   /* margin-bottom: -3em; */
   margin-left: 5.1em;
+  z-index: 2;
 }
 /* .homepage .top .info .main {
   height: 100vh;
