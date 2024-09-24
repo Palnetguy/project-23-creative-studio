@@ -622,7 +622,7 @@ in space. While the game connects them all, every one of them has their problems
       more_images: [],
       title:"MALA HANOJ",
       type_info: "Documentary film, 78min, in Co-production with HBO Max and Filmframe (SK)",
-      more_info: "Over the course of several years, the long-term documentary follows the fate of Vietnamese traders on the German-Czech border. Funded by Slovak audionvisual fund. WIE WERTVOLL IST MÜL?",
+      more_info: "Over the course of several years, the long-term documentary follows the fate of Vietnamese traders on the German-Czech border. Funded by Slovak audionvisual fund.",
       image: doc00img,
     },
     {
@@ -645,7 +645,7 @@ in space. While the game connects them all, every one of them has their problems
       type: "Documentaries",
       more_images: [],
       title:"HEY WORLD",
-      type_info: "Musical video celebrating 60th anniversary of non-profit association Lebenshilfe",
+      type_info: "Music video celebrating 60th anniversary of non-profit association Lebenshilfe",
       more_info: "",
       image: doc03img,
     },
