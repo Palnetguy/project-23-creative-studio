@@ -154,7 +154,7 @@ const Works = () => {
     {
       type: "Fiction Films",
       title: "MY WORLD UPSIDE DOWN ",
-      more_images: [fic4Im1],
+      more_images: [],
       type_info: "Feature film in development, 90min",
       more_info:
         "Cco-production with WHAT IF Films (SK), director: Daniel Rihak. Winner of Havc Development Award '23, POPup Award '23 and Orka Award´22.Development  supported by Slovak Film Fund.",
@@ -162,7 +162,7 @@ const Works = () => {
     },
     {
       type: "Fiction Films",
-      title: "MPOLYCULE",
+      title: "POLYCULE",
       more_images: [fic5Im2, fic5Im3, fic5Im4, fic5Im5],
       type_info: "Mini-series, dramedy (9x20min) in development",
       more_info:
