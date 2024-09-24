@@ -126,11 +126,11 @@ const Works = () => {
   const list_of_works = [
     {
       type: "Fiction Films",
-      title: "MEASURING THE EARTH (2/2)",
+      title: "LOVEBOTS",
       more_images: [fic1Im2, fic1Im3],
       type_info:
-        "3D animations for science magazine TERRA X, broadcaster ZDF (Germany)",
-      more_info: "From Columbus to outer space | with Harald Lesch | 43 min",
+        "Feature film in development, 100min",
+      more_info: "Development supported by BKM (German Ferderal Ministy of Culture) and Medienboard. Participation (a.o.) Music and Cinema Marseilles 2023 (market), eQuinoxe Europe '23",
       image: fic1Im1,
     },
     {
@@ -1093,22 +1093,23 @@ const ShowWorks = ({
               <img src={e.image} alt="" className="open_btn" />
 
               <svg
-                // onClick={handleAddClass}
-                className="open_btn"
-                xmlns="http://www.w3.org/2000/svg"
-                width="72"
-                height="72"
-                viewBox="0 0 72 72"
-                fill="none"
-              >
-                <circle
-                  opacity="0.6"
-                  cx="36"
-                  cy="36"
-                  r="30"
-                  fill="#9747FF"
-                  stroke="#9747FF"
-                />
+  // onClick={handleAddClass}
+  className="open_btn"
+  xmlns="http://www.w3.org/2000/svg"
+  width="36"
+  height="36"
+  viewBox="0 0 72 72"
+  fill="none"
+>
+  <circle
+    opacity="0.6"
+    cx="36"
+    cy="36"
+    r="30"
+    fill="#9747FF"
+    stroke="#9747FF"
+  />
+
                 <path
                   d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
                   fill="white"
@@ -1118,23 +1119,25 @@ const ShowWorks = ({
             <div className="info">
               <div className="images">
                 {e.more_images.length !== 0 && (
-                  <svg
-                    // onClick={handleAddClass}
-                    className="open_btn_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="72"
-                    height="72"
-                    viewBox="0 0 72 72"
-                    fill="none"
-                  >
-                    <circle
-                      opacity="0.6"
-                      cx="36"
-                      cy="36"
-                      r="30"
-                      fill="#9747FF"
-                      stroke="#9747FF"
-                    />
+                 <svg
+                 // onClick={handleAddClass}
+                 className="open_btn_1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="36" 
+                 height="36"
+                 viewBox="0 0 72 72"
+                 fill="none"
+               >
+                 <circle
+                   opacity="0.6"
+                   cx="36"
+                   cy="36"
+                   r="30"
+                   fill="#9747FF"
+                   stroke="#9747FF"
+                 />
+      
+               
                     <path
                       d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
                       fill="white"
