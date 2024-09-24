@@ -228,7 +228,7 @@ const Works = () => {
       title: "HISTORY OF SURVIVAL",
       type_info: "Animation for science show TERRA X, broadcaster ZDF / arte",
       more_info:
-        "Client: UFA documentaryAnimation for science show TERRA X, broadcaster ZDF / arte",
+        "Client: UFA documentary",
       image: sci1Im1,
     },
     {
@@ -269,7 +269,7 @@ const Works = () => {
     {
       type: "Scientific Animation",
       more_images: [],
-      title: "MYSTERIOUS PHENOMAS (1/2)",
+      title: "MYSTERIOUS PHENOMAS (2/2)",
       type_info: "Animation for science program TERRA X, ZDF",
       more_info:
         "Second series of a shop about seemingly unexplained phenomena",
