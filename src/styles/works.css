@@ -371,3 +371,11 @@
     width: 100%;
   }
 }
+
+.video-info{
+  margin-bottom: 40px;
+}
+.video-container{
+  display: flex;
+  flex-direction: column;
+}

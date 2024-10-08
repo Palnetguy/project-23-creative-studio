@@ -1160,7 +1160,7 @@ return (
               />
             </svg>
           </div>
-          <div className="info">
+          <div className="info video-info">
             <div className="video-container">
             {e.vid_url && renderVideo(e.vid_url)}
             </div>

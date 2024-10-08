@@ -1,3 +1,4 @@
+import './embeded_style.css';
 const renderVideo = (vid_url) => {
     if (!vid_url || vid_url.length === 0) return null;
 
@@ -14,16 +15,16 @@ const renderVideo = (vid_url) => {
       }
 
       return (
-        <iframe
-          key={index}
-          src={embedUrl}
-          width="640"
-          height="360"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          title={`Video ${index + 1}`}
-        ></iframe>
+        <div key={index} className="video-container">
+          <iframe
+            src={embedUrl}
+            style={{ width: '66vw', height: '60vh' }}
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            title={`Video ${index + 1}`}
+          ></iframe>
+        </div>
       );
     });
   };
