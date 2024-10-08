@@ -2,8 +2,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: auto;
     margin: 20px 0;
+    overflow: hidden;
+    width: '68vw'; 
+    border: "none";
   }
-  
+  @media (max-width: 600px) {
+    .video-container {
+      height: 200px;
+      width: 94vw;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .video-container {
+      height: 400px;
+      width: 80vw;
+    }
+  }
+  @media (min-width: 901px) {
+    .video-container {
+      height: 600px;
+      width: 68vw;
+    }
+  } 

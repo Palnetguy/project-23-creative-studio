@@ -1083,52 +1083,95 @@ const ShowWorks = ({
   }, [works_type_select]);
 
 
-  useEffect(() => {
-    // document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".open_btn");
-    console.log(buttons);
+  // useEffect(() => {
+  //   // document.addEventListener("DOMContentLoaded", function () {
+  //   const buttons = document.querySelectorAll(".open_btn");
+  //   console.log(buttons);
 
+  //   buttons.forEach((button) => {
+  //     button.addEventListener("click", () => {
+  //       console.log("hi");
+
+  //       const content = button.parentElement.parentElement;
+  //       if (content.classList.contains("active")) {
+  //         content.classList.remove("active");
+  //         console.log(content.classList);
+  //       } else {
+  //         content.classList.add("active");
+  //         console.log(content.classList);
+  //       }
+  //     });
+  //   });
+
+  //   // });
+  // }, []);
+  // useEffect(() => {
+  //   // document.addEventListener("DOMContentLoaded", function () {
+  //   const buttons1 = document.querySelectorAll(".open_btn_1");
+  //   console.log(buttons1);
+
+  //   buttons1.forEach((button1) => {
+  //     button1.addEventListener("click", () => {
+  //       console.log("hi");
+
+  //       const content = button1.parentElement.parentElement.parentElement;
+  //       if (content.classList.contains("active")) {
+  //         content.classList.remove("active");
+  //         console.log(content.classList);
+  //       } else {
+  //         content.classList.add("active");
+  //         console.log(content.classList);
+  //       }
+  //     });
+  //   });
+
+  // }, []);
+
+  useEffect(() => {
+    const buttons = document.querySelectorAll(".open_btn");
+  
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
-        console.log("hi");
-
         const content = button.parentElement.parentElement;
-        if (content.classList.contains("active")) {
-          content.classList.remove("active");
-          console.log(content.classList);
-        } else {
-          content.classList.add("active");
-          console.log(content.classList);
-        }
+  
+        const allContent = document.querySelectorAll(".content");
+        allContent.forEach((item) => {
+          if (item !== content) {
+            item.classList.remove("active");
+          }
+        });
+  
+        content.classList.toggle("active");
       });
     });
-
-    // });
+  
+    return () => {
+      buttons.forEach((button) => {
+        button.removeEventListener("click", () => {});
+      });
+    };
   }, []);
+  
   useEffect(() => {
-    // document.addEventListener("DOMContentLoaded", function () {
     const buttons1 = document.querySelectorAll(".open_btn_1");
-    console.log(buttons1);
-
+  
     buttons1.forEach((button1) => {
       button1.addEventListener("click", () => {
-        console.log("hi");
-
-        const content = button1.parentElement.parentElement.parentElement;
-        if (content.classList.contains("active")) {
-          content.classList.remove("active");
-          console.log(content.classList);
-        } else {
-          content.classList.add("active");
-          console.log(content.classList);
-        }
+        const allContent = document.querySelectorAll(".content");
+        allContent.forEach((item) => {
+          item.classList.remove("active");
+        });
       });
     });
-
-    // });
+  
+    return () => {
+      buttons1.forEach((button1) => {
+        button1.removeEventListener("click", () => {});
+      });
+    };
   }, []);
-
-
+  
+  
 return (
   <div className="show_works">
     {list_of_works

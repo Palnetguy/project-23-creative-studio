@@ -18,7 +18,6 @@ const renderVideo = (vid_url) => {
         <div key={index} className="video-container">
           <iframe
             src={embedUrl}
-            style={{ width: '66vw', height: '60vh' }}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
