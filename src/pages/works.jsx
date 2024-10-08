@@ -116,6 +116,8 @@ import doc20img from "../assets/images/documentaries/20_wanderlust.jpg";
 import is1img from "../assets/images/innovativeSolutions/LOVEBOTS_AI_1.jpg";
 import is2img from "../assets/images/innovativeSolutions/LOVEBOTS_AI_2.jpg";
 import is3img from "../assets/images/innovativeSolutions/LOVEBOTS_AI_3.jpg";
+//import video component
+import renderVideo from "../components/work/embeded_video";
 
 const Works = () => {
   //   var works_type_select = "Fiction Films";
@@ -141,6 +143,7 @@ const Works = () => {
       more_info:
         "Summer Rebels was shortlisted for German Film Award 2021 and won the GERMAN FILM CRITICS’ AWARD for Best Children’s Film in the same year. Running in competition at numerous national and international festivals it received various awards. Licensed by Netflix in several European countries the film also saw a theatrical release in Germany, Slovakia, Czech Republic and Austria. More information:",
       image: fic2Im1,
+      vid_url: ["https://vimeo.com/436425181"],
     },
     {
       type: "Fiction Films",
@@ -159,6 +162,7 @@ const Works = () => {
       more_info:
         "Cco-production with WHAT IF Films (SK), director: Daniel Rihak. Winner of Havc Development Award '23, POPup Award '23 and Orka Award´22.Development  supported by Slovak Film Fund.",
       image: fic4Im1,
+      vid_url:["https://vimeo.com/887248315"],
     },
     {
       type: "Fiction Films",
@@ -185,6 +189,7 @@ const Works = () => {
       more_info:
         "In a mix of mockumentary and re-enactment Adela Babanova traces a failed attempt at revealing state sponsored disinformation. Coproduction with Czech television, Bratri s.r.o. and MagicLab.",
       image: fic7Im1,
+      vid_url:["https://vimeo.com/290691320"],
     },
     {
       type: "Fiction Films",
@@ -212,6 +217,7 @@ const Works = () => {
       more_info:
         "Sound design for the experimental film 'Cat Effect' by Melissa Dullius and Gustavo Jahn",
       image: fic10Im1,
+      vid_url:["https://vimeo.com/28453590"],
     },
     {
       type: "Fiction Films",
@@ -221,6 +227,7 @@ const Works = () => {
       more_info:
         "A wild Soviet Era roller coaster by Matīss Kaža in co-production with TRICKSTER Pictures (LTV) , FILMKOLEKTIV (CZ) & WHAT IF Films (SK)",
       image: fic11Im1,
+      vid_url:["https://vimeo.com/14395575"],
     },
     {
       type: "Scientific Animation",
@@ -238,6 +245,7 @@ const Works = () => {
       type_info: "Animation for science show TERRA X, broadcaster ZDF",
       more_info: "",
       image: sci2Im1,
+      vid_url:["https://vimeo.com/149449460", "https://vimeo.com/149448131"],
     },
     {
       type: "Scientific Animation",
@@ -247,6 +255,7 @@ const Works = () => {
         "Animation and sound design for an image film for wind park operator WPD",
       more_info: "",
       image: sci3Im1,
+      vid_url:["https://vimeo.com/146884277"],
     },
     {
       type: "Scientific Animation",
@@ -335,6 +344,7 @@ const Works = () => {
       type_info: "Animation for knowledge program TERRA X on ZDF (Germany)",
       more_info: "",
       image: sci13Im1,
+      vid_url:["https://vimeo.com/149447369"],
     },
     {
       type: "Scientific Animation",
@@ -343,6 +353,7 @@ const Works = () => {
       type_info: "Image film for PostBase products",
       more_info: "Agency: MEDIA BRICKS, Germany",
       image: sci14Im1,
+      vid_url:["https://vimeo.com/146901286"],
     },
     {
       type: "Scientific Animation",
@@ -351,6 +362,7 @@ const Works = () => {
       type_info: "Animation for science show TERRA X, broadcaster ZDF",
       more_info: "",
       image: sci15Im1,
+      vid_url:["https://vimeo.com/149445842"],
     },
     {
       type: "Scientific Animation",
@@ -359,6 +371,7 @@ const Works = () => {
       type_info: "VFX for image film for elevator manufacturer Schindler",
       more_info: "Agency: MEDIA BRICKS",
       image: sci16Im1,
+      vid_url:["https://vimeo.com/149212336"],
     },
     {
       type: "Scientific Animation",
@@ -368,6 +381,7 @@ const Works = () => {
         "Theatrical trailer for International Film Festival Duhok, Kurdistan Iraq 2015",
       more_info: "",
       image: sci17Im1,
+      vid_url:["https://vimeo.com/146570504"],
     },
     {
       type: "Scientific Animation",
@@ -393,6 +407,7 @@ const Works = () => {
       type_info: "Image film for Financial Times Germany",
       more_info: "Agency: Flemming Pfuhl / Play Media",
       image: sci20Im1,
+      vid_url:["https://vimeo.com/12915636"],
     },
     {
       type: "Scientific Animation",
@@ -401,6 +416,7 @@ const Works = () => {
       type_info: "Image film for Ubitricity",
       more_info: "",
       image: sci21Im1,
+      vid_url:["https://vimeo.com/55765758"],
     },
     {
       type: "Scientific Animation",
@@ -445,6 +461,7 @@ const Works = () => {
       more_info:
         "Imagine getting kicked out of school and your best friend just became possessed by the devil. Can it get any worse?! Yes, it can...",
       image: ca1img,
+      vid_url:["https://vimeo.com/36068260"],
     },
   
     {
@@ -454,6 +471,7 @@ const Works = () => {
       type_info: "Theatrical trailer for a film contest propagating inclusion",
       more_info: "Client: Lebenshilfe",
       image: ca2img,
+      vid_url:["https://vimeo.com/131183191"],
     },
     {
       type: "Character Animation",
@@ -462,6 +480,7 @@ const Works = () => {
       type_info: "Theatrical trailer for film festival Über Mut",
       more_info: "Client: Aktion Mensch",
       image: ca3img,
+      vid_url:["https://vimeo.com/16027418"],
     },
     {
       type: "Character Animation",
@@ -478,6 +497,7 @@ const Works = () => {
       type_info: "Explanatory film for the NY based startup",
       more_info: "",
       image: ca5img,
+      vid_url:["https://vimeo.com/86840223"],
     },
     {
       type: "Character Animation",
@@ -486,6 +506,7 @@ const Works = () => {
       type_info: "Image film for Provinzial insurances",
       more_info: "",
       image: ca6img,
+      vid_url:["https://vimeo.com/146895359"],
     },
     {
       type: "Character Animation",
@@ -494,6 +515,7 @@ const Works = () => {
       type_info: "Character animations for image films",
       more_info: "Client: Müllerland",
       image: ca7img,
+      vid_url:["https://vimeo.com/55766380","https://vimeo.com/55766379"],
     },
     {
       type: "Character Animation",
@@ -502,6 +524,7 @@ const Works = () => {
       type_info: "Theatrical trailer for film festival 11mm",
       more_info: "The festival was held at the same time in Berlin and Charkiw / Kiew",
       image: ca8img,
+      vid_url:["https://vimeo.com/37512150"],
     },
     {
       type: "Character Animation",
@@ -511,6 +534,7 @@ const Works = () => {
       more_info: `Different people watching football at different places on earth and 
 in space. While the game connects them all, every one of them has their problems to cope with. Premiered at DOK Leipzig 2014.`,
       image: ca9img,
+      vid_url:["https://vimeo.com/107983822"],
     },
     {
       type: "Character Animation",
@@ -519,6 +543,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Animation films for National Paralympic Committee Germany",
       more_info: "Character design: Pablo Ientile",
       image: ca10img,
+      vid_url:["https://vimeo.com/776523585/fc5e9db313"],
     },
     {
       type: "Character Animation",
@@ -527,6 +552,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Graphic conception and animated bumpers for the series Rechthaber",
       more_info: "Screened on the Galileo-show on Pro7 , Germany",
       image: ca11img,
+      vid_url:["https://vimeo.com/146889758"],
     },
     {
       type: "Character Animation",
@@ -535,6 +561,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: `Theatrical trailer for film festival “Über Macht”`,
       more_info: "Client: Aktion Mensch",
       image: ca12img,
+      vid_url:["https://vimeo.com/19903699"],
     },
     {
       type: "Character Animation",
@@ -559,6 +586,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Animations for image films for Social Democratic Party",
       more_info: "",
       image: ca15img,
+      vid_url:["https://vimeo.com/33340426","https://vimeo.com/33272619"],
     },
     {
       type: "Character Animation",
@@ -567,6 +595,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Teaser for European elections 2009",
       more_info: "Client:  Young Socialists (Jusos)",
       image: ca16img,
+      vid_url:["https://vimeo.com/4643842"],
     },
     {
       type: "Character Animation",
@@ -624,6 +653,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Documentary film, 78min, in Co-production with HBO Max and Filmframe (SK)",
       more_info: "Over the course of several years, the long-term documentary follows the fate of Vietnamese traders on the German-Czech border. Funded by Slovak audionvisual fund.",
       image: doc00img,
+      vid_url:["https://vimeo.com/50022913", "https://vimeo.com/829458213"],
     },
     {
       type: "Documentaries",
@@ -632,6 +662,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Documentary film, 46min, in co-production with Strahlendes Klima",
       more_info: "Ecology Film Prize , Science Film Festival, Asia'18/ world premiere: Barents Ecology Film Festival in Petrosavods",
       image: doc01img,
+      vid_url:["https://vimeo.com/37804089"],
     },
     {
       type: "Documentaries",
@@ -640,6 +671,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Documentation, diverse short formats for web and social media",
       more_info: "Agency InsGlück",
       image: doc02img,
+      vid_url:["https://vimeo.com/"],
     },
     {
       type: "Documentaries",
@@ -648,6 +680,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Music video celebrating 60th anniversary of non-profit association Lebenshilfe",
       more_info: "",
       image: doc03img,
+      vid_url:["https://youtu.be/CMWtY-Gs-ek"],
     },
     {
       type: "Documentaries",
@@ -656,6 +689,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Karaoke style for documentary Mala Hanoj",
       more_info: "",
       image: doc04img,
+      vid_url:["https://vimeo.com/82545092","https://vimeo.com/55443616","https://vimeo.com/55099055"],
     },
     {
       type: "Documentaries",
@@ -664,6 +698,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Animations for the puppet theater, production of Theater Figuro",
       more_info: "",
       image: doc05img,
+      vid_url:["https://vimeo.com/782679328"],
     },
     {
       type: "Documentaries",
@@ -672,6 +707,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Documentary film series for Aktion Mensch",
       more_info: "",
       image: doc06img,
+      vid_url:["https://vimeo.com/146044037","https://vimeo.com/149199304","https://vimeo.com/146954739"],
     },
     {
       type: "Documentaries",
@@ -680,6 +716,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Documentary film about inclusion match day in Bremen",
       more_info: "Client: Aktion Mensch",
       image: doc07img,
+      vid_url:["https://vimeo.com/149395369"],
     },
     {
       type: "Documentaries",
@@ -688,6 +725,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Trailer",
       more_info: "Client: Aktion Mensch",
       image: doc08img,
+      vid_url:["https://vimeo.com/97977669"],
     },
     {
       type: "Documentaries",
@@ -696,6 +734,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Image film",
       more_info: "Client: Aktion Mensch",
       image: doc09img,
+      vid_url:["https://youtu.be/RVzaIEgecwI"],
     },
     {
       type: "Documentaries",
@@ -704,6 +743,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Web documentary series about sign language festival Deaf slam Bääm.",
       more_info: "Client: Aktion Mensch",
       image: doc10img,
+      vid_url:["https://youtu.be/K8PWhI1fmIE","https://youtu.be/3G7BYmRItzw","https://youtu.be/soQgIFbUNPA", "https://youtu.be/dE55EKgQPnc"]
     },
     {
       type: "Documentaries",
@@ -712,6 +752,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Trailer for sign language Deaf Slam Bääm",
       more_info: "Client: Aktion Mensch",
       image: doc11img,
+      vid_url:["https://youtu.be/Oazzu6LcQbM"],
     },
     {
       type: "Documentaries",
@@ -720,6 +761,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Documentary film project ",
       more_info: "co-production with Ahenfie Multimedia/Accra. Funded by Jan Vrijman Fund IDFA un Sundance Institute",
       image: doc12img,
+      vid_url:["https://vimeo.com/14385566"],
     },
     {
       type: "Documentaries",
@@ -728,6 +770,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Edit of documentary film, 53min",
       more_info: `Tracking the origins of nuclear power in Australia, the place of the worlds biggest nuclear fuel reserves.`,
       image: doc13img,
+      vid_url:["https://youtu.be/L4u5rbcx1D0", "https://vimeo.com/37244612"],
     },
     {
       type: "Documentaries",
@@ -745,6 +788,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info:`Trailer for the documentary "Empire of Evil" by Mohammad Farokhmanesh`,
       more_info: "",
       image: doc15img,
+      vid_url:["https://www.dailymotion.com/video/x7wzlvi"],
     },
     {
       type: "Documentaries",
@@ -753,6 +797,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: `Teaser for the 50th anniversary of non-profit association Aktion Mensch`,
       more_info: "",
       image: doc16img,
+      vid_url:["https://vimeo.com/91536887"],
     },
     {
       type: "Documentaries",
@@ -769,6 +814,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Trailer for documentary film festival Überall Dabei",
       more_info: "Client: Aktion Mensch",
       image: doc18img,
+      vid_url:["https://vimeo.com/55866304"],
     },
     {
       type: "Documentaries",
@@ -786,6 +832,7 @@ in space. While the game connects them all, every one of them has their problems
       type_info: "Web documentary series about the Wanderlust theater project for the Federal Cultural Foundatio",
       more_info: "",
       image: doc20img,
+      vid_url:["https://vimeo.com/50678630"]
     },
     {
       type: "Innovative Solutions",
@@ -815,7 +862,6 @@ in space. While the game connects them all, every one of them has their problems
     },
   ];
   const handle_works_type_select_change = (type) => {
-    // setworks_type_selectnext(type);
     setWorksTypeSelect(type);
     // setworks_type_selectnext("");
 
@@ -1036,6 +1082,7 @@ const ShowWorks = ({
     setAvId(1 + Math.random());
   }, [works_type_select]);
 
+
   useEffect(() => {
     // document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".open_btn");
@@ -1080,71 +1127,72 @@ const ShowWorks = ({
 
     // });
   }, []);
-  return (
-    <div className="show_works">
-      {/* {list_of_works.map((e) => (
-        <h1>{e.title}</h1>
-      ))} */}
-      {list_of_works
-        .filter((e, index) => e.type === works_type_select)
-        .map((e, index) => (
-          <div className="eachwork">
-            <div className="image image_each_work">
-              <img src={e.image} alt="" className="open_btn" />
 
-              <svg
-              // onClick={handleAddClass}
+
+return (
+  <div className="show_works">
+    {list_of_works
+      .filter((e) => e.type === works_type_select)
+      .map((e, index) => (
+        <div key={index} className="eachwork">
+          <div className="image image_each_work">
+            <img src={e.image} alt={e.title} className="open_btn" />
+            <svg
               className="open_btn"
               xmlns="http://www.w3.org/2000/svg"
               width="36"
               height="36"
               viewBox="0 0 20 70"
               fill="none"
-              >
-                <circle
+              // onClick={handleAddClass}
+            >
+              <circle
                 opacity="0.6"
                 cx="36"
                 cy="36"
                 r="30"
                 fill="#9747FF"
                 stroke="#9747FF"
-                />
-
-                <path
-                  d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
-                  fill="white"
-                />
-              </svg>
+              />
+              <path
+                d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div className="info">
+            <div className="video-container">
+            {e.vid_url && renderVideo(e.vid_url)}
             </div>
             <div className="info">
               <div className="images">
-                {e.more_images.length !== 0 && (
-                 <svg
-                 // onClick={handleAddClass}
-                 className="open_btn_1"
-                 xmlns="http://www.w3.org/2000/svg"
-                 width="36" 
-                 height="36"
-                 viewBox="0 10 20 70"
-                 fill="none"
-               >
-                 <circle
-                   opacity="0.6"
-                   cx="36"
-                   cy="36"
-                   r="30"
-                   fill="#9747FF"
-                   stroke="#9747FF"
-                 />
+                {e.more_images?.length !== 0 && (
+                  <svg
+                    className="open_btn_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 10 20 70"
+                    fill="none"
+                    // onClick={handleAddClass}
+                  >
+                    <circle
+                      opacity="0.6"
+                      cx="36"
+                      cy="36"
+                      r="30"
+                      fill="#9747FF"
+                      stroke="#9747FF"
+                    />
                     <path
                       d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
                       fill="white"
                     />
                   </svg>
                 )}
-                {e.more_images.map((e) => (
-                  <div className="image">
-                    <img src={e} alt="" />
+                {e.more_images.map((img, imgIndex) => (
+                  <div key={imgIndex} className="image">
+                    <img src={img} alt={`Additional ${imgIndex}`} />
                   </div>
                 ))}
               </div>
@@ -1155,10 +1203,11 @@ const ShowWorks = ({
               </div>
             </div>
           </div>
-        ))}
-      <BackButton className='back_btn'  onClick={() => setworks_type_select("")} />
-    </div>
-  );
+         </div>
+      ))}
+    <BackButton className="back_btn" onClick={() => setworks_type_select('')} />
+  </div>
+);
 };
 
 export default Works;
