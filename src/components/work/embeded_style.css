@@ -30,6 +30,7 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  border: 1px solid teal;
 }
 
 .video-iframe {
