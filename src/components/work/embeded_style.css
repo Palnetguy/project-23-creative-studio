@@ -16,15 +16,20 @@
   padding: 0;
   margin: 0;
 } */
+.video-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  width: 100%;
-  background-color: black;
-  margin-bottom: 20px;
+  flex: 1 1 30%;
+  margin: 10px;
+  max-width: 88vw;
 }
 
 .video-iframe {
@@ -34,6 +39,14 @@
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+
+@media (max-width: 768px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+    padding: 10px 0;
+  }
 }
 
 

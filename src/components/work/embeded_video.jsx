@@ -55,13 +55,13 @@
 // };
 
 // export default renderVideo;
-
 import './embeded_style.css';
 
 const renderVideo = (vid_url) => {
   if (!vid_url || vid_url.length === 0) return null;
 
   console.log("Rendering Videos:", vid_url);
+
   return vid_url.map((url, index) => {
     let embedUrl = '';
 
@@ -84,15 +84,17 @@ const renderVideo = (vid_url) => {
     }
 
     return (
-      <div key={index} className="video-container">
-        <iframe
-          src={embedUrl}
-          frameBorder="0"
-          className="video-iframe"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          title={`Video ${index + 1}`}
-        ></iframe>
+      <div key={index} className="video-wrapper">
+        <div className="video-container">
+          <iframe
+            src={embedUrl}
+            frameBorder="0"
+            className="video-iframe"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+            allowFullScreen
+            title={`Video ${index + 1}`}
+          ></iframe>
+        </div>
       </div>
     );
   });

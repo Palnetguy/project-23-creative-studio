@@ -1197,8 +1197,9 @@ const ShowWorks = ({
               </svg>
             </div>
             <div className="info video-info">
+            
               <div className="video-container">
-                {e.vid_url && renderVideo(e.vid_url)}
+              {e.vid_url && e.vid_url.length> 0 &&renderVideo(e.vid_url)}
               </div>
               <div className="info">
                 <div className="images">
