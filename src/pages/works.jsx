@@ -1126,147 +1126,123 @@ const ShowWorks = ({
   //   });
 
   // }, []);
-const handleRemoveClass=()=>{
-  const buttons = document.querySelectorAll(".open_btn_1");
-  console.log(buttons);
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      console.log("hi");
-
-      const content = button.parentElement.parentElement.parentElement;
-      if (content.classList.contains("active")) {
-        content.classList.remove("active");
-        console.log(content.classList);
-      }
-    });
-  })
-}
-
-  useEffect(() => {
-    const buttons = document.querySelectorAll(".open_btn");
+  const handleRemoveClass = () => {
+    const buttons = document.querySelectorAll(".open_btn_1");
   
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
-        const content = button.parentElement.parentElement;
-  
-        const allContent = document.querySelectorAll(".content");
-        allContent.forEach((item) => {
-          if (item !== content) {
-            item.classList.remove("active");
-          }
-        });
-  
-        content.classList.toggle("active");
+        const content = button.closest(".eachwork");
+        if (content?.classList.contains("active")) {
+          content.classList.remove("active");
+        }
       });
+    });
+  };
+  
+  useEffect(() => {
+    const buttons = document.querySelectorAll(".open_btn");
+  
+    const handleClick = (button) => {
+      const content = button.closest(".eachwork");
+  
+      const allContent = document.querySelectorAll(".content");
+      allContent.forEach((item) => {
+        if (item !== content) {
+          item.classList.remove("active");
+        }
+      });
+  
+      content?.classList.toggle("active");
+    };
+  
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => handleClick(button));
     });
   
     return () => {
       buttons.forEach((button) => {
-        button.removeEventListener("click", () => {});
+        button.removeEventListener("click", () => handleClick(button));
       });
     };
   }, []);
   
-  // useEffect(() => {
-  //   const buttons1 = document.querySelectorAll(".open_btn_1");
-  
-  //   buttons1.forEach((button1) => {
-  //     button1.addEventListener("click", () => {
-  //       const allContent = document.querySelectorAll(".content");
-  //       allContent.forEach((item) => {
-  //         item.classList.remove("active");
-  //       });
-  //     });
-  //   });
-  
-  //   return () => {
-  //     buttons1.forEach((button1) => {
-  //       button1.removeEventListener("click", () => {});
-  //     });
-  //   };
-  // }, []);
-  
-
-return (
-  <div className="show_works">
-    {list_of_works
-      .filter((e) => e.type === works_type_select)
-      .map((e, index) => (
-        <div key={index} className="eachwork">
-          <div className="image image_each_work">
-            <img src={e.image} alt={e.title} className="open_btn" />
-            <svg
-              className="open_btn"
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              viewBox="0 0 20 70"
-              fill="none"
-              // onClick={handleAddClass}
-            >
-              <circle
-                opacity="0.6"
-                cx="36"
-                cy="36"
-                r="30"
-                fill="#9747FF"
-                stroke="#9747FF"
-              />
-              <path
-                d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-          <div className="info video-info">
-            <div className="video-container">
-            {e.vid_url && renderVideo(e.vid_url)}
+  return (
+    <div className="show_works">
+      {list_of_works
+        .filter((e) => e.type === works_type_select)
+        .map((e, index) => (
+          <div key={index} className="eachwork">
+            <div className="image image_each_work">
+              <img src={e.image} alt={e.title} className="open_btn" />
+              <svg
+                className="open_btn"
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 20 70"
+                fill="none"
+              >
+                <circle
+                  opacity="0.6"
+                  cx="36"
+                  cy="36"
+                  r="30"
+                  fill="#9747FF"
+                  stroke="#9747FF"
+                />
+                <path
+                  d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-            <div className="info">
-              <div className="images">
-                {e.more_images?.length !== 0 && (
-                  <svg
-                    className="open_btn_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 10 20 70"
-                    fill="none"
-                    onClick={handleRemoveClass}
-                  >
-                    <circle
-                      opacity="0.6"
-                      cx="36"
-                      cy="36"
-                      r="30"
-                      fill="#9747FF"
-                      stroke="#9747FF"
-                    />
-                    <path
-                      d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
-                      fill="white"
-                    />
-                  </svg>
-                )}
-                {e.more_images.map((img, imgIndex) => (
-                  <div key={imgIndex} className="image">
-                    <img src={img} alt={`Additional ${imgIndex}`} />
-                  </div>
-                ))}
+            <div className="info video-info">
+              <div className="video-container">
+                {e.vid_url && renderVideo(e.vid_url)}
               </div>
-              <div className="cont">
-                <p>{e.title}</p>
-                <p>{e.type_info}</p>
-                <p>{e.more_info}</p>
+              <div className="info">
+                <div className="images">
+                  {e.more_images?.length !== 0 && (
+                    <svg
+                      className="open_btn_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 10 20 70"
+                      fill="none"
+                      onClick={handleRemoveClass} 
+                    >
+                      <circle
+                        opacity="0.6"
+                        cx="36"
+                        cy="36"
+                        r="30"
+                        fill="#9747FF"
+                        stroke="#9747FF"
+                      />
+                      <path
+                        d="M36.7071 21.2929C36.3166 20.9024 35.6834 20.9024 35.2929 21.2929L28.9289 27.6569C28.5384 28.0474 28.5384 28.6805 28.9289 29.0711C29.3195 29.4616 29.9526 29.4616 30.3431 29.0711L36 23.4142L41.6569 29.0711C42.0474 29.4616 42.6805 29.4616 43.0711 29.0711C43.4616 28.6805 43.4616 28.0474 43.0711 27.6569L36.7071 21.2929ZM37 50V22H35V50H37Z"
+                        fill="white"
+                      />
+                    </svg>
+                  )}
+                  {e.more_images.map((img, imgIndex) => (
+                    <div key={imgIndex} className="image">
+                      <img src={img} alt={`Additional ${imgIndex}`} />
+                    </div>
+                  ))}
+                </div>
+                <div className="cont">
+                  <p>{e.title}</p>
+                  <p>{e.type_info}</p>
+                  <p>{e.more_info}</p>
+                </div>
               </div>
             </div>
           </div>
-         </div>
-      ))}
-    <BackButton className="back_btn" onClick={() => setworks_type_select('')} />
-  </div>
-);
-};
-
+        ))}
+      <BackButton className="back_btn" onClick={() => setworks_type_select('')} />
+    </div>
+  );
+}
 export default Works;
