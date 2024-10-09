@@ -1,4 +1,4 @@
-.video-container {
+/* .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,26 @@
   height: 80vh;
   padding: 0;
   margin: 0;
+} */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%; 
 }
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media (max-width: 600px) {
   .video-container {
     height: 60vh;
