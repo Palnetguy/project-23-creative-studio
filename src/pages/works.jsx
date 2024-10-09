@@ -1126,6 +1126,22 @@ const ShowWorks = ({
   //   });
 
   // }, []);
+const handleRemoveClass=()=>{
+  const buttons = document.querySelectorAll(".open_btn_1");
+  console.log(buttons);
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      console.log("hi");
+
+      const content = button.parentElement.parentElement.parentElement;
+      if (content.classList.contains("active")) {
+        content.classList.remove("active");
+        console.log(content.classList);
+      }
+    });
+  })
+}
 
   useEffect(() => {
     const buttons = document.querySelectorAll(".open_btn");
@@ -1152,26 +1168,26 @@ const ShowWorks = ({
     };
   }, []);
   
-  useEffect(() => {
-    const buttons1 = document.querySelectorAll(".open_btn_1");
+  // useEffect(() => {
+  //   const buttons1 = document.querySelectorAll(".open_btn_1");
   
-    buttons1.forEach((button1) => {
-      button1.addEventListener("click", () => {
-        const allContent = document.querySelectorAll(".content");
-        allContent.forEach((item) => {
-          item.classList.remove("active");
-        });
-      });
-    });
+  //   buttons1.forEach((button1) => {
+  //     button1.addEventListener("click", () => {
+  //       const allContent = document.querySelectorAll(".content");
+  //       allContent.forEach((item) => {
+  //         item.classList.remove("active");
+  //       });
+  //     });
+  //   });
   
-    return () => {
-      buttons1.forEach((button1) => {
-        button1.removeEventListener("click", () => {});
-      });
-    };
-  }, []);
+  //   return () => {
+  //     buttons1.forEach((button1) => {
+  //       button1.removeEventListener("click", () => {});
+  //     });
+  //   };
+  // }, []);
   
-  
+
 return (
   <div className="show_works">
     {list_of_works
@@ -1217,7 +1233,7 @@ return (
                     height="36"
                     viewBox="0 10 20 70"
                     fill="none"
-                    // onClick={handleAddClass}
+                    onClick={handleRemoveClass}
                   >
                     <circle
                       opacity="0.6"
