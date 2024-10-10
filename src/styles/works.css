@@ -336,6 +336,7 @@
     mix-blend-mode: color-burn;
     z-index: -1;
   }
+ 
   .works .works_nav .work {
     width: calc((100% / 3) - 1em);
     margin: 1em 0.5em;
@@ -372,10 +373,18 @@
   }
 }
 
-.video-info{
+/* .video-info{
   margin-bottom: 40px;
 }
-.video-container{
+.video-container {
   display: flex;
   flex-direction: column;
-}
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+  height: 100vh;
+  border: 1px solid red;
+  z-index: 10;
+  border-right: 1px, solid, #7f3e98;
+} */

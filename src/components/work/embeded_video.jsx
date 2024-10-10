@@ -84,18 +84,20 @@ const renderVideo = (vid_url) => {
     }
 
     return (
-      <div key={index} className="video-wrapper">
-        <div className="video-container">
-          <iframe
-            src={embedUrl}
-            frameBorder="0"
-            className="video-iframe"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
-            allowFullScreen
-            title={`Video ${index + 1}`}
-          ></iframe>
-        </div>
+    // <div key={index}>
+    <div key={index} className="video-container">
+      <div className="video-wrapper">
+      <iframe
+        src={embedUrl}
+        frameBorder="0"
+        className="video-iframe"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+        allowFullScreen
+        title={`Video ${index + 1}`}
+      ></iframe>
       </div>
+    </div>
+  // </div>
     );
   });
 };
