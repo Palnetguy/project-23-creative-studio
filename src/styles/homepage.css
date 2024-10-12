@@ -281,18 +281,18 @@
     font-size: 50px;
     line-height: 1;
   }
-  .homepage .top {
+  /* .homepage .top {
     padding: 0em;
     padding-top: 0;
     background: url('../assets/images/background/Desktop-1.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
-  .homepage .more_content {
+  } */
+  /* .homepage .more_content {
     background: url('../assets/images/background/Background-mob.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
+  } */
   .homepage .top .info {
     padding: 1em;
     padding-top: 0;
