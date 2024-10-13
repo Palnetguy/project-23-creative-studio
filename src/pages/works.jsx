@@ -1209,7 +1209,7 @@ const ShowWorks = ({
                       xmlns="http://www.w3.org/2000/svg"
                       width="36"
                       height="36"
-                      viewBox="0 0 30 70"
+                      viewBox="0 0 36 70"
                       fill="none"
                       onClick={handleRemoveClass} 
                     >
@@ -1217,7 +1217,7 @@ const ShowWorks = ({
                         opacity="0.6"
                         cx="36"
                         cy="36"
-                        r="30"
+                        r="26"
                         fill="#9747FF"
                         stroke="#9747FF"
                       />
