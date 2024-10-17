@@ -58,6 +58,7 @@ import "../styles/news.css";
 import React from "react";
 import lovebot from "../assets/images/news/news2.jpeg";
 import avi from "../assets/images/news/news-avi.png";
+import useResponsive from "../utils/useResponsive";
 
 const News = () => {
   const navigate = useNavigate();
@@ -86,10 +87,11 @@ const News = () => {
       director: "Team Projector23"
     }
   ];
-  
+  const screenSize = useResponsive();
+
 
   return (
-    <div className="news">
+    <div className="news" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
     <Navbar />
     <h1>News</h1>
     {newsItems.map((item, index) => (

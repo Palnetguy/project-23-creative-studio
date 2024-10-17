@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from "react";
 import BackButton from "../components/back_button";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
+import useResponsive from "../utils/useResponsive";
 
 // fiction films images import
 import fic1Im1 from "../assets/images/Ficition/Fic1/im1.jpeg";
@@ -929,8 +930,9 @@ in space. While the game connects them all, every one of them has their problems
       selectedRef.current.focus();
     }
   }, [worksTypeSelect])
+  const screenSize = useResponsive();
   return (
-    <div className="works">
+    <div className="works" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
       {/* <video src={work_bg} className="work_bg" id="backGbW" autoPlay></video> */}
       {/* <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video> */}
       {/* <video

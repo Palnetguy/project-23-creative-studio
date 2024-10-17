@@ -3,12 +3,15 @@ import BackButton from "../components/back_button";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import "../styles/Imprint.css";
+import useResponsive from "../utils/useResponsive";
 
 const Imprint = () => {
   const navigate = useNavigate();
+  const screenSize = useResponsive();
+
   return (
     <>
-      <div className="contain_imprint">
+      <div className="contain_imprint" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <Navbar />
         <div className="Imprint">
           <div className="first_sctn">

@@ -42,7 +42,7 @@ body{
 a {
   text-decoration: none;
 }
-
+/* 
 @media (min-width: 1024px) {
   body {
       font-size: 18px;
@@ -129,4 +129,4 @@ a {
   p {
       font-size: 1.75rem;
   }
-}
+} */

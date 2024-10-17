@@ -5,10 +5,12 @@ import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import work_bg from "../assets/vid/homebg-video.mp4";
 import "../styles/contact.css";
+import useResponsive from "../utils/useResponsive";
 
 const Contact = () => {
   const videoRef = useRef(null);
   const navigate = useNavigate();
+  const screenSize = useResponsive();
 
   useEffect(() => {
     const videoElement = videoRef.current;
@@ -27,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
       <Navbar />
       <video
         id="backGb"
