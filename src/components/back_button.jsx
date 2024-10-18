@@ -1,8 +1,10 @@
 import "../styles/back_botton.css";
+import useResponsive from "../utils/useResponsive";
 
 const BackButton = ({ onClick, className }) => {
+  const screenSize = useResponsive()
   return (
-    <div className={`back_botton ${className}`} onClick={onClick}>
+    <div className={`back_botton ${className}`} onClick={onClick}style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="146"

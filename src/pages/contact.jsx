@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <div className="contact" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <Navbar />
+      <Navbar  />
       <video
         id="backGb"
         ref={videoRef}
@@ -40,9 +40,9 @@ const Contact = () => {
         muted
         playsInline
       />
-      <div className="cont_info">
+      <div className="cont_info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <h1>CONTACT</h1>
-        <div className="info">
+        <div className="info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <p>Email : </p>
           <ul>
             <li><p>tina@projector23.de</p></li>
@@ -50,17 +50,17 @@ const Contact = () => {
             <li><p>richard@projector23.de</p></li>
           </ul>
         </div>
-        <div className="info">
+        <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <p>Phone : </p>
           <ul>
             <li><p>+49 (0) 30 648 396 50</p></li>
           </ul>
         </div>
       </div>
-      <div className="office_info">
-        <div className="container">
-          <p className="subtitle">Office</p>
-          <ul className="sublist">
+      <div className="office_info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <p className="subtitle" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Office</p>
+          <ul className="sublist"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <p>PROJECTOR23 GmbH & Co.KG<br/> Kiefholzstr.2<br/>12435 Berlin Germany</p>
             {/* <li><p>tina@projector23.de</p></li>
             <li><p>martin@projector23.de</p></li>
@@ -68,11 +68,11 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-      <div className="linkedin_info">
-        <BackButton className="btn" onClick={handleBackButtonClick} />
-        <div className="container">
-          <p className="subtitle">LinkedIn</p>
-          <ul className="sublist">
+      <div className="linkedin_info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <BackButton className="btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }} onClick={handleBackButtonClick} />
+        <div className="container"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <p className="subtitle"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>LinkedIn</p>
+          <ul className="sublist"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <li><a href="/#">Martina Sakova</a></li>
             <li><a href="/#">Martin Kleinmichel</a></li>
             <li><a href="/#">Richard Sako</a></li>
