@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="linkedin_info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-        <BackButton className="btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }} onClick={handleBackButtonClick} />
+        <BackButton onClick={handleBackButtonClick} />
         <div className="container"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <p className="subtitle"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>LinkedIn</p>
           <ul className="sublist"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>

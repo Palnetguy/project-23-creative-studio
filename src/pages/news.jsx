@@ -111,18 +111,19 @@ const News = () => {
 
 
 const NewsTap = React.memo(({ title, pic, paragraph, director }) => {
+  const screenSize = useResponsive();
   return (
-    <div className="news_tap">
-      <p className="title">{title}</p>
-      <div className="info">
-        <div className="img">
+    <div className="news_tap" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <p className="title"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{title}</p>
+      <div className="info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="img"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <img className="img"
-          
+          style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
             src={pic}
             alt={title}
           />
         </div>
-        <div className="more">
+        <div className="more"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <p>{paragraph}</p>
           <p>Directed by {director}</p>
         </div>

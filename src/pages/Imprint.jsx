@@ -13,9 +13,9 @@ const Imprint = () => {
     <>
       <div className="contain_imprint" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <Navbar />
-        <div className="Imprint">
-          <div className="first_sctn">
-            <div className="lft">
+        <div className="Imprint" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="first_sctn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="lft" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
               <h2>REPRESENTED BY</h2>
               <ul>
                 <li>
@@ -60,7 +60,7 @@ const Imprint = () => {
               </p>
 
               <p>
-                <span className="highLit">Source</span>: eRecht24
+                <span className="highLit"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Source</span>: eRecht24
               </p>
 
               <h3>1. Definitions</h3>
@@ -90,19 +90,19 @@ const Imprint = () => {
                 identity of that natural person.
               </p>
             </div>
-            <div className="rgt">
+            <div className="rgt"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
               <h3>Commercial Register Number</h3>
-              <p className="ad_ce">
+              <p className="ad_ce" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                 Amtsgericht Charlottenburg Berlin HRA 41066B
               </p>
               <h3>EU VAT ID</h3>
-              <p className="ad_ce">DE252281327</p>
+              <p className="ad_ce" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>DE252281327</p>
               <h3>Responsible for the content according to § 55 Abs. 2 RStV</h3>
-              <p className="ad_ce">Martina Sakova</p>
+              <p className="ad_ce" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Martina Sakova</p>
               <h3>References for the used pictures and graphics</h3>
-              <p className="ad_ce">– will be delivered on request –</p>
-              <p className="ad_ce">
-                <span className="highLit">Source</span>: Imprint created by the
+              <p className="ad_ce" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>– will be delivered on request –</p>
+              <p className="ad_ce" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+                <span className="highLit" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Source</span>: Imprint created by the
                 imprint generator of e-recht24.de
               </p>
               <h1>Disclaimer:</h1>
@@ -263,7 +263,7 @@ const Imprint = () => {
             </li>
           </ul>
           <h3>3. Name and Address of the Data Protection Officer</h3>
-          <p className="ad_ce">The Data Protection Officer of the controller is</p>
+          <p className="ad_ce" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>The Data Protection Officer of the controller is</p>
           <ul>
             <li>
               <p>Martin Kleinmichel</p>
