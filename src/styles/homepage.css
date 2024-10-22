@@ -7,7 +7,7 @@
   flex-direction: column;
   background: url('../assets/images/background/Desktop-1.png');
   margin-bottom: -10px;
-  padding: 3em;
+  /* padding: 3em; */
 }
 
 .homepage .top .info {
@@ -18,10 +18,10 @@
   flex-direction: column;
   justify-content: flex-end;
   /* justify-content: center; */
-  /* padding: 3em; */
+  padding: 3em;
 }
 .homepage .top {
-  padding: 3em;
+  /* padding: 3em; */
   padding-top: 0;
 }
 .homepage .top .info video {
@@ -294,7 +294,7 @@
     background-attachment: fixed;
   } */
   .homepage .top .info {
-    padding: 1em;
+    /* padding: 1em; */
     padding-top: 0;
   }
   .homepage .more_content .preshow {

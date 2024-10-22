@@ -10,10 +10,10 @@ const InfoParagraph = ({ children }) => (
 const Top = ({ videoRef }) => {
   const screenSize=useResponsive()
     return (
-      <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="top">
         <Navbar />
-        <div className="info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="bgvid" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="info">
+          <div className="bgvid">
             <video
               id="backGb"
               ref={videoRef}

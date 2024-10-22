@@ -2,7 +2,6 @@ import "../styles/navbar.css";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import useResponsive from "../utils/useResponsive";
 
 const Navbar = () => {
   const [mob_Nav_open, setmob_Nav_open] = useState(false);
@@ -10,18 +9,17 @@ const Navbar = () => {
   const handle_open_mob_nav = () => {
     setmob_Nav_open((prev) => !prev);
   };
-  const screenSize=useResponsive()
   return (
-    <div className="navbb"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className={`navbar mobile ${mob_Nav_open ? "" : "closed"}`} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="navbb">
+      <div className={`navbar mobile ${mob_Nav_open ? "" : "closed"}`} >
         <nav>
-          <div className="btn_ham" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="btn_ham" >
             <Link to="/">
-              <div className="logo" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="logo" >
                 <img src={logo} alt="" />
               </div>
             </Link>
-            <div className="ham" onClick={handle_open_mob_nav} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="ham" onClick={handle_open_mob_nav}>
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -92,10 +90,10 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className="navbar pc" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="navbar pc">
         <nav>
           <Link to="/">
-            <div className="logo" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="logo" >
               <img src={logo} alt="" />
             </div>
           </Link>
