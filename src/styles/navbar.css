@@ -136,3 +136,46 @@
     position: relative;
   }
 }
+
+@media (min-width:2000px) {
+  .navbar ul li a,
+.navbar ul li a span {
+  font-size: 70px;
+  letter-spacing: 0.1em;
+  font-weight: 1000;
+}
+
+.navbar .logo {
+  width: 280px;
+  height: 260px;
+  position: relative;
+}
+}
+
+@media (min-width:1500px) and (max-width:1999px){
+  .navbar ul li a,
+  .navbar ul li a span {
+    font-size: 45px;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+  }
+  .navbar .logo {
+    width: 200px;
+    height: 180px;
+    position: relative;
+  }
+}
+
+@media (min-width:1050px) and (max-width:1449px){
+  .navbar ul li a,
+  .navbar ul li a span {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+  }
+  .navbar .logo {
+    width: 170px;
+    height: 150px;
+    position: relative;
+  }
+}

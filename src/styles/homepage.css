@@ -442,3 +442,9 @@
     transform: scale(1);
   }
 }
+
+/* @media (min-width: 5000px){
+  .homepage .top .info .moreIf p {
+    font-size: 68px;
+  }
+} */

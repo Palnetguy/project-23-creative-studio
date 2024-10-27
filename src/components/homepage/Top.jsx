@@ -29,7 +29,7 @@ const Top = ({ videoRef }) => {
             <h1>CREATIVE STUDIO</h1>
           </div>
   
-          <div className="moreIf" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="moreIf" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '48px' }}>
             <InfoParagraph>
               Projector23 is a Berlin-based film production company, VFX studio
               and hub for innovative solutions. Since 2008 we create
