@@ -475,6 +475,30 @@
     letter-spacing: -1.68px;
     margin-top: 1.2em;
   }
+
+
+  .homepage .more_content .our_team .mber p {
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 1.4;
+  }
+  .homepage .more_content .our_team .mber .img {
+    height: 600px;
+    border-radius: 20px;
+    margin: 14px 0;
+  }
+  .homepage .more_content .our_team .mber p:nth-child(3) {
+    font-size: 32px;
+  }
+  .homepage .more_content .btns .btn {
+    width: 280px;
+    height: 110px;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.28px;
+  }
 }
 
 @media (min-width:1500px) and (max-width:1999px){
@@ -501,6 +525,29 @@
     margin-top: 1.2em;
   }
 
+  .homepage .more_content .our_team .mber p {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+  }
+  .homepage .more_content .our_team .mber .img {
+    height: 450px;
+    border-radius: 20px;
+    margin: 14px 0;
+  }
+  .homepage .more_content .our_team .mber p:nth-child(3) {
+    font-size: 28px;
+  }
+  .homepage .more_content .btns .btn {
+   
+    width: 260px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.28px;
+  }
 }
 
 @media (min-width:1050px) and (max-width:1449px){
@@ -530,5 +577,28 @@
     line-height: normal;
     letter-spacing: -1.68px;
     margin-top: 1.2em;
+  }
+  .homepage .more_content .our_team .mber p {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    line-height: normal;
+  }
+  .homepage .more_content .our_team .mber .img {
+    height: 400px;
+    border-radius: 20px;
+    margin: 14px 0;
+  }
+  .homepage .more_content .our_team .mber p:nth-child(3) {
+    font-size: 22px;
+  }
+  .homepage .more_content .btns .btn {
+   
+    width: 220px;
+    height: 80px;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.28px;
   }
 }
