@@ -170,3 +170,72 @@
     padding-bottom: 60px;
   }
 }
+
+@media (min-width:2000px) {
+  .contact h1 {
+    font-size: 120px;
+  }
+  .contact .cont_info .info > p {
+    font-size: 36px;
+    /* line-height: 2.8; */
+  }
+  .contact .cont_info .info > ul p {
+    font-size: 28px;
+    /* line-height: 2.8; */
+  }
+  .contact .subtitle {
+    font-size: 36px;
+  }
+  .contact .sublist p {
+    font-size: 28px;
+  }
+  .contact .sublist a {
+    font-size: 31px;
+  }
+}
+
+@media (min-width:1500px) and (max-width:1999px){
+  .contact h1 {
+    font-size: 100px;
+  }
+  .contact .cont_info .info > p {
+    font-size: 32px;
+    /* line-height: 2.2; */
+  }
+  .contact .cont_info .info > ul p {
+    font-size: 26px;
+    /* line-height: 2; */
+  }
+  .contact .subtitle {
+    font-size: 32px;
+  }
+  .contact .sublist p {
+    font-size: 26px;
+  }
+  .contact .sublist a {
+    font-size: 27px;
+  }
+}
+
+@media (min-width:1050px) and (max-width:1449px){
+  .contact h1 {
+    font-size: 80px;
+  }
+  .contact .cont_info .info > p {
+    font-size: 28px;
+    /* line-height: 1.6; */
+  }
+  .contact .cont_info .info > ul p {
+    font-size: 22px;
+    /* line-height: 1.4; */
+  }
+  .contact .subtitle {
+    font-size: 28px;
+  }.contact .sublist p {
+    font-size: 22px;
+  }
+  .contact .sublist a {
+    font-size: 21px;
+  }
+}
+
