@@ -551,7 +551,7 @@
   }
 }
 
-@media (min-width:1050px) and (max-width:1449px){
+/* @media (min-width:1050px) and (max-width:1449px){
   .homepage .top .info h1 {
     font-size: 100px;
     font-weight: 900;
@@ -566,12 +566,12 @@
     letter-spacing: -0.32px;
   }
 
-  /* .homepage .more_content .preshow {
+  .homepage .more_content .preshow {
     height: 260px;
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 10em;
-  } */
+  } 
   .homepage .more_content h1.ourteam {
     font-size:80px;
     font-weight: 800;
@@ -602,4 +602,4 @@
     line-height: normal;
     letter-spacing: -1.28px;
   }
-}
+} */
