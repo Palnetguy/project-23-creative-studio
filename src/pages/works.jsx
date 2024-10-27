@@ -12,7 +12,6 @@ import { useEffect, useRef, useState } from "react";
 import BackButton from "../components/back_button";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
-import useResponsive from "../utils/useResponsive";
 
 // fiction films images import
 import fic1Im1 from "../assets/images/Ficition/Fic1/im1.jpeg";
@@ -930,9 +929,8 @@ in space. While the game connects them all, every one of them has their problems
       selectedRef.current.focus();
     }
   }, [worksTypeSelect])
-  const screenSize = useResponsive();
   return (
-    <div className="works" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="works" >
       {/* <video src={work_bg} className="work_bg" id="backGbW" autoPlay></video> */}
       {/* <video src={work_bg} id="backGbW" autoplay loop muted playsinline></video> */}
       {/* <video
@@ -946,21 +944,21 @@ in space. While the game connects them all, every one of them has their problems
       /> */}
       <Navbar />
       <h1>Works</h1>
-      <div className="works_nav" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="works_nav" >
         <div
           className="work"
           onClick={() => {
             handle_works_type_select_change("Fiction Films");
           }}
-          style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="img" ref={selectedRef} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <img src={fic_work} alt="" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }} />
+          >
+          <div className="img" ref={selectedRef} >
+            <img src={fic_work} alt=""  />
           </div>
           <div
             className={`text ${
               worksTypeSelect === "Fiction Films" ? "active" : ""
             }`}
-            style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            >
             <p>Fiction Films</p>
           </div>
         </div>
@@ -969,8 +967,8 @@ in space. While the game connects them all, every one of them has their problems
           onClick={() =>
             handle_works_type_select_change("Scientific Animation")
           }
-          style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="img" ref={selectedRef} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          >
+          <div className="img" ref={selectedRef} >
             <img src={sci_img} alt="" />
           </div>
           <div
@@ -978,39 +976,39 @@ in space. While the game connects them all, every one of them has their problems
             className={`text ${
               worksTypeSelect === "Scientific Animation" ? "active" : ""
             }`}
-            style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            >
             <p>Scientific Animation</p>
           </div>
         </div>
         <div
           className="work"
           onClick={() => handle_works_type_select_change("Character Animation")}
-          style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="img" ref={selectedRef}style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <img src={char_anim} alt="" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}/>
+          >
+          <div className="img" ref={selectedRef}>
+            <img src={char_anim} alt="" />
           </div>
           <div
             
             className={`text ${
               worksTypeSelect === "Character Animation" ? "active" : ""
             }`}
-            style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            >
             <p>Character Animation</p>
           </div>
         </div>
         <div
           className="work"
           onClick={() => handle_works_type_select_change("Documentaries")}
-          style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="img" ref={selectedRef} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <img src={docum_im} alt="" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }} />
+          >
+          <div className="img" ref={selectedRef} >
+            <img src={docum_im} alt=""  />
           </div>
           <div
             
             className={`text ${
               worksTypeSelect === "Documentaries" ? "active" : ""
             }`}
-            style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            >
             <p>Documentaries</p>
           </div>
         </div>
@@ -1019,15 +1017,15 @@ in space. While the game connects them all, every one of them has their problems
           onClick={() =>
             handle_works_type_select_change("Innovative Solutions")
           }
-          style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          >
           <div className="img" ref={selectedRef}>
-            <img src={inov_img} alt="" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }} />
+            <img src={inov_img} alt=""  />
           </div>
           <div
             className={`text ${
               worksTypeSelect === "Innovative Solutions" ? "active" : ""
             }`}
-            style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            >
             <p>Innovative Solutions</p>
           </div>
         </div>
@@ -1050,10 +1048,9 @@ in space. While the game connects them all, every one of them has their problems
 
 const WorksInfo = () => {
   const navigate = useNavigate();
-  const screenSize = useResponsive();
   return (
-    <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className="text" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="info" >
+      <div className="text" >
         <p>
           We specialise in three film areas. As each idea is unique and requires
           an appropriate form, we often combine tools and methods of all three
@@ -1067,7 +1064,7 @@ const WorksInfo = () => {
         </p>
       </div>
 
-      <div className="logos" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="logos" >
         <img src={logos} alt="" />
       </div>
       <BackButton className='back_btn' onClick={() => navigate(-1)} />
@@ -1168,15 +1165,14 @@ const ShowWorks = ({
       });
     };
   }, []);
-  const screenSize = useResponsive();
   return (
-    <div className="show_works" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="show_works" >
       {list_of_works
         .filter((e) => e.type === works_type_select)
         .map((e, index) => (
-          <div key={index} className="eachwork"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <div className="image image_each_work" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-              <img src={e.image} alt={e.title} className="open_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}/>
+          <div key={index} className="eachwork">
+            <div className="image image_each_work" >
+              <img src={e.image} alt={e.title} className="open_btn" />
               <svg
                 className="open_btn"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1184,7 +1180,7 @@ const ShowWorks = ({
                 height="36"
                 viewBox="0 0 20 70"
                 fill="none"
-                style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+                >
                 <circle
                   opacity="0.6"
                   cx="36"
@@ -1199,13 +1195,13 @@ const ShowWorks = ({
                 />
               </svg>
             </div>
-            <div className="info video-info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="info video-info" >
             
-              <div className="video-container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="video-container" >
               {e.vid_url && e.vid_url.length> 0 &&renderVideo(e.vid_url)}
               </div>
-              <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-                <div className="images" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="info" >
+                <div className="images" >
                   {e.more_images?.length !== 0 && (
                     <svg
                       className="open_btn_1"
@@ -1215,7 +1211,7 @@ const ShowWorks = ({
                       viewBox="0 0 36 70"
                       fill="none"
                       onClick={handleRemoveClass} 
-                      style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+                      >
                       <circle
                         opacity="0.6"
                         cx="36"
@@ -1231,12 +1227,12 @@ const ShowWorks = ({
                     </svg>
                   )}
                   {e.more_images.map((img, imgIndex) => (
-                    <div key={imgIndex} className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+                    <div key={imgIndex} className="image" >
                       <img src={img} alt={`Additional ${imgIndex}`} />
                     </div>
                   ))}
                 </div>
-                <div className="cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+                <div className="cont" >
                   <p>{e.title}</p>
                   <p>{e.type_info}</p>
                   <p>{e.more_info}</p>

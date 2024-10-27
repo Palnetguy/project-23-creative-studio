@@ -2,13 +2,12 @@ import React from "react";
 import Navbar from "../navbar";
 import "../../styles/homepage.css";
 import backGb from "../../assets/vid/homebg-video.mp4";
-import useResponsive from "../../utils/useResponsive";
 
 const InfoParagraph = ({ children }) => (
     <p className="info-paragraph">{children}</p>
   );
 const Top = ({ videoRef }) => {
-  const screenSize=useResponsive()
+  
     return (
       <div className="top">
         <Navbar />
@@ -24,12 +23,12 @@ const Top = ({ videoRef }) => {
               playsInline
             />
           </div>
-          <div className="main" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="main" >
             <h1>PROJECTOR23</h1>
             <h1>CREATIVE STUDIO</h1>
           </div>
   
-          <div className="moreIf" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '48px' }}>
+          <div className="moreIf" >
             <InfoParagraph>
               Projector23 is a Berlin-based film production company, VFX studio
               and hub for innovative solutions. Since 2008 we create

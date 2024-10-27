@@ -5,12 +5,10 @@ import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import work_bg from "../assets/vid/homebg-video.mp4";
 import "../styles/contact.css";
-import useResponsive from "../utils/useResponsive";
 
 const Contact = () => {
   const videoRef = useRef(null);
   const navigate = useNavigate();
-  const screenSize = useResponsive();
 
   useEffect(() => {
     const videoElement = videoRef.current;
@@ -29,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="contact" >
       <Navbar  />
       <video
         id="backGb"
@@ -40,9 +38,9 @@ const Contact = () => {
         muted
         playsInline
       />
-      <div className="cont_info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="cont_info" >
         <h1>CONTACT</h1>
-        <div className="info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="info">
           <p>Email : </p>
           <ul>
             <li><p>tina@projector23.de</p></li>
@@ -50,17 +48,17 @@ const Contact = () => {
             <li><p>richard@projector23.de</p></li>
           </ul>
         </div>
-        <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="info" >
           <p>Phone : </p>
           <ul>
             <li><p>+49 (0) 30 648 396 50</p></li>
           </ul>
         </div>
       </div>
-      <div className="office_info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-        <div className="container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <p className="subtitle" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Office</p>
-          <ul className="sublist"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="office_info">
+        <div className="container" >
+          <p className="subtitle" >Office</p>
+          <ul className="sublist">
             <p>PROJECTOR23 GmbH & Co.KG<br/> Kiefholzstr.2<br/>12435 Berlin Germany</p>
             {/* <li><p>tina@projector23.de</p></li>
             <li><p>martin@projector23.de</p></li>
@@ -68,11 +66,11 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-      <div className="linkedin_info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="linkedin_info">
         <BackButton onClick={handleBackButtonClick} />
-        <div className="container"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <p className="subtitle"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>LinkedIn</p>
-          <ul className="sublist"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="container">
+          <p className="subtitle">LinkedIn</p>
+          <ul className="sublist">
             <li><a href="/#">Martina Sakova</a></li>
             <li><a href="/#">Martin Kleinmichel</a></li>
             <li><a href="/#">Richard Sako</a></li>

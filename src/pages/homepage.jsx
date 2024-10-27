@@ -1,6 +1,5 @@
 import { lazy, useEffect, useRef, useCallback } from "react";
 import "../styles/homepage.css";
-import useResponsive from "../utils/useResponsive";
 
 const Top = lazy(() => import("../components/homepage/Top"));
 const MoreContent = lazy(() => import("../components/homepage/MoreContent"));
@@ -34,11 +33,10 @@ const useVideoLoop = (videoRef) => {
 
 const Homepage = () => {
   const videoRef = useRef(null);
-  const screenSize = useResponsive();
   useVideoLoop(videoRef);
 
   return (
-    <div className="homepage" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="homepage">
         <Top videoRef={videoRef} />
         <MoreContent />
     </div>
