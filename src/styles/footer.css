@@ -25,17 +25,17 @@ footer {
 
 @media (min-width:2000px) {
   footer{
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
 @media (min-width:1500px) and (max-width:1999px){  footer{
-  font-size: 30px;
+  font-size: 20px;
 }
 }
 
 @media (min-width:1050px) and (max-width:1449px){
   footer{
-    font-size: 26px;
+    font-size: 20px;
   }
 }
