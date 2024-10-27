@@ -19,6 +19,7 @@
 .navbar ul {
   display: flex;
   align-items: center;
+  margin-right: 2em;
 }
 .navbar ul li {
   list-style-type: none;
@@ -140,9 +141,9 @@
 @media (min-width:2000px) {
   .navbar ul li a,
 .navbar ul li a span {
-  font-size: 70px;
+  font-size: 45px;
   letter-spacing: 0.1em;
-  font-weight: 1000;
+/*   font-weight: 1000; */
 }
 
 .navbar .logo {
