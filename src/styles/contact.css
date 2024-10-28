@@ -196,7 +196,7 @@
 
 @media (min-width:1500px) {
   .contact h1 {
-    font-size: 60px;
+    font-size: 90px;
   }
   .contact .cont_info .info > p {
     font-size: 30px;
@@ -219,7 +219,7 @@
 
 @media (min-width:1000px) {
   .contact h1 {
-    font-size: 60px;
+    font-size: 90px;
   }
   /* .contact .cont_info .info > p {
     font-size: 30px;
