@@ -29,7 +29,6 @@ const Contact = () => {
 
   return (
     <div className="contact" >
-    <div className="contact" >
       <Navbar  />
       <video
         id="backGb"
@@ -41,9 +40,7 @@ const Contact = () => {
         playsInline
       />
       <div className="cont_info" >
-      <div className="cont_info" >
         <h1>CONTACT</h1>
-        <div className="info">
         <div className="info">
           <p>Email : </p>
           <ul>
@@ -52,7 +49,6 @@ const Contact = () => {
             <li><p>richard@projector23.de</p></li>
           </ul>
         </div>
-        <div className="info" >
         <div className="info" >
           <p>Phone : </p>
           <ul>
@@ -64,10 +60,6 @@ const Contact = () => {
         <div className="container" >
           <p className="subtitle" >Office</p>
           <ul className="sublist">
-      <div className="office_info">
-        <div className="container" >
-          <p className="subtitle" >Office</p>
-          <ul className="sublist">
             <p>PROJECTOR23 GmbH & Co.KG<br/> Kiefholzstr.2<br/>12435 Berlin Germany</p>
             {/* <li><p>tina@projector23.de</p></li>
             <li><p>martin@projector23.de</p></li>
@@ -75,7 +67,6 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-      <div className="linkedin_info">
       <div className="linkedin_info">
         <BackButton onClick={handleBackButtonClick} />
         <div className="container">
