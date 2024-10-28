@@ -1,5 +1,4 @@
 import './embeded_style.css';
-import useResponsive from '../../utils/useResponsive';
 
 const renderVideo = (vid_url) => {
   if (!vid_url || vid_url.length === 0) return null;
@@ -26,7 +25,6 @@ const renderVideo = (vid_url) => {
       console.error('Invalid video URL:', url);
       return null;
     }
-    const screenSize = useResponsive()
     return (
     <div key={index} className="video-container" >
       <div className="video-wrapper" >

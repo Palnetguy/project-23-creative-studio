@@ -1,6 +1,5 @@
 import { lazy, useEffect, useRef, useCallback } from "react";
 import "../styles/homepage.css";
-import useResponsive from "../utils/useResponsive";
 
 const Top = lazy(() => import("../components/homepage/Top"));
 const MoreContent = lazy(() => import("../components/homepage/MoreContent"));

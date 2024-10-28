@@ -85,20 +85,21 @@
     rgba(255, 255, 255, 0.28) 5.54%,
     rgba(255, 255, 255, 0.12) 93.74%
   );
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+/*   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05); */
   backdrop-filter: blur(10px);
-  width: 60vw;
+/*   width: 60vw; */
   /* height: 230px; */
   padding: 1em;
   flex-shrink: 0;
   position: relative;
   /* bottom: -10em; */
   margin-top: 3em;
-  opacity: 0;
+  margin-right: 2em;
+/*   opacity: 0; */
   animation: fadeIn forwards ease-in-out 2s 3s;
   /* position: absolute; */
   /* margin-bottom: -3em; */
-  margin-left: 5.1em;
+  margin-left: 1em;
   z-index: 2;
 }
 /* .homepage .top .info .main {
@@ -331,6 +332,7 @@
 @media (max-width: 800px) {
   .homepage .top .info {
     justify-content: center;
+    
   }
   .homepage .top .info .moreIf {
     width: 100%;

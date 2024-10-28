@@ -58,7 +58,6 @@ import "../styles/news.css";
 import React from "react";
 import lovebot from "../assets/images/news/news2.jpeg";
 import avi from "../assets/images/news/news-avi.png";
-import useResponsive from "../utils/useResponsive";
 
 const News = () => {
   const navigate = useNavigate();
@@ -92,6 +91,7 @@ const News = () => {
 
   return (
     <div className="news" >
+    <div className="news" >
     <Navbar />
     <h1>News</h1>
     {newsItems.map((item, index) => (
@@ -117,12 +117,18 @@ const NewsTap = React.memo(({ title, pic, paragraph, director }) => {
       <p className="title">{title}</p>
       <div className="info">
         <div className="img">
+    <div className="news_tap" >
+      <p className="title">{title}</p>
+      <div className="info">
+        <div className="img">
           <img className="img"
+          
           
             src={pic}
             alt={title}
           />
         </div>
+        <div className="more">
         <div className="more">
           <p>{paragraph}</p>
           <p>Directed by {director}</p>

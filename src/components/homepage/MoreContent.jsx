@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../footer";
 import { teamMembers } from "./TeamData";
-import useResponsive from "../../utils/useResponsive";
 
 const TeamMember = ({ name, image, role }) => (
     <div className="mber">
@@ -15,7 +14,7 @@ const TeamMember = ({ name, image, role }) => (
   );
   
   const MoreContent = () => {
-    const screenSize= useResponsive()
+   
     return (
       <div className="more_content">
         <div className="preshow"></div>
