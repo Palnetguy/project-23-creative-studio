@@ -123,9 +123,9 @@
 .contain_imprint .navbar {
   padding: 0 60px;
 }
-@media (max-width: 950px) {
+@media (max-width: 999px) {
   .contain_imprint .navbar {
-    padding: 0 0em;
+    padding: 0 1em;
   }
   .Imprint .first_sctn {
     display: flex;
@@ -167,5 +167,40 @@
   }
   .Imprint {
     padding: 0 1em;
+  }
+}
+
+@media (min-width:2000px) {
+  .Imprint h1 {
+    font-size: 60px;
+  }
+  .Imprint h2 {
+    font-size: 33px;
+  }
+  .Imprint p {
+    font-size: 24px;
+  }
+  .Imprint h3 {
+    font-size: 32px;
+  }
+  .Imprint .highLit {
+    font-size: 30px;
+  }
+}
+@media (min-width:1500px) {
+  .Imprint h1 {
+    font-size: 50px;
+  }
+  .Imprint h2 {
+    font-size: 30px;
+  }
+  .Imprint p {
+    font-size: 20px;
+  }
+  .Imprint h3 {
+    font-size: 26px;
+  }
+  .Imprint .highLit {
+    font-size: 24px;
   }
 }

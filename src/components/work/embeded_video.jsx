@@ -28,8 +28,8 @@ const renderVideo = (vid_url) => {
     }
     const screenSize = useResponsive()
     return (
-    <div key={index} className="video-container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className="video-wrapper" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div key={index} className="video-container" >
+      <div className="video-wrapper" >
       <iframe
         src={embedUrl}
         frameBorder="0"
@@ -37,7 +37,7 @@ const renderVideo = (vid_url) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
         allowFullScreen
         title={`Video ${index + 1}`}
-        style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></iframe>
+        ></iframe>
       </div>
     </div>
     );

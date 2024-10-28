@@ -22,3 +22,16 @@ footer {
 
   }
 }
+@media (min-width: 2000px){
+  footer{
+    font-size: 20px;
+  }
+  
+}
+@media (min-width: 1500px){
+  footer{
+    font-size: 15px;
+  }
+
+  
+}

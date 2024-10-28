@@ -53,6 +53,10 @@
 .navbar ul li:nth-child(1) a span {
   transform: translateY(0);
 }
+.homepage .navbar {
+  padding: 0 1em;
+}
+
 .navbar.pc {
   display: flex;
 }
@@ -134,5 +138,34 @@
     width: 85px;
     height: auto;
     position: relative;
+  }
+}
+
+/* responsive  ================================= responsive */
+@media (min-width:2000px){
+ .navbar .logo {
+    width: 150px;
+    height: 160px;
+  }
+  .navbar ul li a, .navbar ul li a span {
+    font-size: 26px;
+  }
+}
+@media (min-width:1500px){
+ .navbar .logo {
+    width: 140px;
+    height: 150px;
+  }
+  .navbar ul li a, .navbar ul li a span {
+    font-size: 24px;
+  }
+}
+@media (min-width:1000px){
+ .navbar .logo {
+    width: 120px;
+    height: 120px;
+  }
+  .navbar ul li a, .navbar ul li a span {
+    font-size: 20px;
   }
 }

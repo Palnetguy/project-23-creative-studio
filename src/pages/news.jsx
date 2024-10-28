@@ -87,11 +87,11 @@ const News = () => {
       director: "Team Projector23"
     }
   ];
-  const screenSize = useResponsive();
+  
 
 
   return (
-    <div className="news" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="news" >
     <Navbar />
     <h1>News</h1>
     {newsItems.map((item, index) => (
@@ -111,19 +111,19 @@ const News = () => {
 
 
 const NewsTap = React.memo(({ title, pic, paragraph, director }) => {
-  const screenSize = useResponsive();
+  
   return (
-    <div className="news_tap" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <p className="title"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{title}</p>
-      <div className="info"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-        <div className="img"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="news_tap" >
+      <p className="title">{title}</p>
+      <div className="info">
+        <div className="img">
           <img className="img"
-          style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
+          
             src={pic}
             alt={title}
           />
         </div>
-        <div className="more"style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="more">
           <p>{paragraph}</p>
           <p>Directed by {director}</p>
         </div>

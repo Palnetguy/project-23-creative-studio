@@ -23,7 +23,7 @@
 }
 
 .works .navbar {
-  padding: 0 60px;
+  padding: 0 1em;
 }
 
 .works > h1 {
@@ -370,5 +370,34 @@
   .works .works_nav .work .text {
     height: 55px;
     width: 100%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .works .works_nav .work .text {
+    font-size: 25px;
+    height: 70px;
+    
+  }
+  .works .works_nav .work .img {
+    height: 230px;
+   
+  }
+  .works > .info > .text {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1500px) {
+  .works .works_nav .work .text {
+    font-size: 25px;
+    height: 70px;
+    
+  }
+  .works .works_nav .work .img {
+    height: 220px;
+   
+  }
+  .works > .info > .text {
+    font-size: 24px;
   }
 }

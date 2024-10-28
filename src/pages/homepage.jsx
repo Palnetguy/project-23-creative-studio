@@ -34,11 +34,11 @@ const useVideoLoop = (videoRef) => {
 
 const Homepage = () => {
   const videoRef = useRef(null);
-  const screenSize = useResponsive();
+  
   useVideoLoop(videoRef);
 
   return (
-    <div className="homepage" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="homepage" >
         <Top videoRef={videoRef} />
         <MoreContent />
     </div>
