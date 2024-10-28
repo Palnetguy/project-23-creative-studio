@@ -36,6 +36,11 @@
 /* .news .navbar {
   padding: 0 60px;
 } */
+
+.news .navbar {
+  padding: 0 1em;
+}
+
 .news > h1 {
   margin-top: 0.7em;
   color: #A1E7F9;
@@ -122,9 +127,7 @@
     /* padding: 0 1em; */
     margin-top: 2em;
   }
-  .news .navbar {
-    padding: 0 1em;
-  }
+  
   .news > h1 {
     /* font-family: Outfit; */
     font-size: 60px;

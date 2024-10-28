@@ -121,12 +121,10 @@
   list-style-type: none;
 }
 .contain_imprint .navbar {
-  padding: 0 60px;
+  padding: 0 1em;
 }
 @media (max-width: 999px) {
-  .contain_imprint .navbar {
-    padding: 0 1em;
-  }
+  
   .Imprint .first_sctn {
     display: flex;
     /* flex: 1; */
