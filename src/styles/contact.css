@@ -1,9 +1,9 @@
 .contact {
+  background-image: url('../assets/images/background/contact-background-1.png');
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   justify-content: space-between;
-  height: 100%;
-  background-image: url('../assets/images/background/contact-background-1.png');
 }
 .contact .navbar {
   padding: 0 1em;
@@ -19,15 +19,17 @@
 }
 .contact h1 {
   color: #A1E7F9;
-  font-family: Gilroy;
-  font-size: 86px;
+  /* font-family: Gilroy;
+  font-size: 86px; */
+  font-family: Outfit;
+  font-size: 60px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: -1.92px;
 }
 .contact .cont_info {
-  padding: 0 200px;
+  padding: 0 100px;
   z-index: 2;
 }
 .contact .cont_info .info {
@@ -199,21 +201,21 @@
     font-size: 90px;
   }
   .contact .cont_info .info > p {
-    font-size: 30px;
+    font-size: 25px;
     /* line-height: 2.8; */
   }
   .contact .cont_info .info > ul p {
-    font-size: 24px;
+    font-size: 18px;
     /* line-height: 2.8; */
   }
   .contact .subtitle {
-    font-size: 32px;
+    font-size: 25px;
   }
   .contact .sublist p {
-    font-size: 22px;
+    font-size: 18px;
   }
   .contact .sublist a {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -221,21 +223,21 @@
   .contact h1 {
     font-size: 90px;
   }
-  /* .contact .cont_info .info > p {
-    font-size: 30px;
-    line-height: 2.8;
+   .contact .cont_info .info > p {
+    font-size: 25px;
+    /* line-height: 2.8; */
   } 
-  .contact .cont_info .info > ul p {
-    font-size: 24px;
-    line-height: 2.8;
+  .contact .cont_info .info > ul p { 
+    font-size: 18px;
+    /* line-height: 2.8; */
   }
   .contact .subtitle {
-    font-size: 32px;
+    font-size: 25px;
   }
   .contact .sublist p {
-    font-size: 22px;
+    font-size: 18px;
   }
   .contact .sublist a {
-    font-size: 24px;
-  }*/
+    font-size: 18px;
+  }
 }
