@@ -67,7 +67,7 @@
 
 
 
-@media (min-width:2000px) {
+/* @media (min-width:2000px) {
   .back_botton {
     font-size: 40px;
   }
@@ -83,13 +83,13 @@
   .back_botton svg {
     width: 80px;
   }
-}
+} */
 
-@media (min-width:1050px) and (max-width:1449px){
+/* @media (min-width:1050px) and (max-width:1449px){
   .back_botton {
     font-size: 32px;
   }
   .back_botton svg {
     width: 70px;
   }
-}
+} */
